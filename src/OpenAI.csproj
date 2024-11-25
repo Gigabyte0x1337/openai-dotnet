@@ -7,9 +7,9 @@
     <PackageTags>OpenAI;openai-dotnet;ChatGPT;Dall-E</PackageTags>
 
     <VersionPrefix>2.1.0</VersionPrefix>
-    <VersionSuffix>beta.2</VersionSuffix>
+    <VersionSuffix>beta.3</VersionSuffix>
 
-    <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net9.0</TargetFrameworks>
     <LangVersion>latest</LangVersion>
 
     <!-- Generate an XML documentation file for the project. -->
@@ -77,6 +77,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
     <PackageReference Include="System.ClientModel" Version="1.2.1" />
-    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="6.0.1" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="9.0.0" />
   </ItemGroup>
 </Project>
