@@ -8,8 +8,8 @@ on:
   release:
     types: [published]
   schedule:
-    # run every day at 00:00
     - cron: '0 0 * * *'
+  workflow_dispatch: # Add this line
 
 jobs:
   build:
