@@ -10,13 +10,13 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalResponseReasoningDeltaEvent : IJsonModel<InternalResponseReasoningDeltaEvent>
+    public partial class ResponseReasoningDeltaEvent : IJsonModel<ResponseReasoningDeltaEvent>
     {
-        internal InternalResponseReasoningDeltaEvent() : this(InternalResponseStreamEventType.ResponseReasoningDelta, default, null, null, default, default, null)
+        internal ResponseReasoningDeltaEvent() : this(InternalResponseStreamEventType.ResponseReasoningDelta, default, null, null, default, default, null)
         {
         }
 
-        void IJsonModel<InternalResponseReasoningDeltaEvent>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
+        void IJsonModel<ResponseReasoningDeltaEvent>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
             writer.WriteStartObject();
             JsonModelWriteCore(writer, options);
@@ -25,10 +25,10 @@ namespace OpenAI.Responses
 
         protected override void JsonModelWriteCore(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
-            string format = options.Format == "W" ? ((IPersistableModel<InternalResponseReasoningDeltaEvent>)this).GetFormatFromOptions(options) : options.Format;
+            string format = options.Format == "W" ? ((IPersistableModel<ResponseReasoningDeltaEvent>)this).GetFormatFromOptions(options) : options.Format;
             if (format != "J")
             {
-                throw new FormatException($"The model {nameof(InternalResponseReasoningDeltaEvent)} does not support writing '{format}' format.");
+                throw new FormatException($"The model {nameof(ResponseReasoningDeltaEvent)} does not support writing '{format}' format.");
             }
             base.JsonModelWriteCore(writer, options);
             if (_additionalBinaryDataProperties?.ContainsKey("item_id") != true)
@@ -60,20 +60,20 @@ namespace OpenAI.Responses
             }
         }
 
-        InternalResponseReasoningDeltaEvent IJsonModel<InternalResponseReasoningDeltaEvent>.Create(ref Utf8JsonReader reader, ModelReaderWriterOptions options) => (InternalResponseReasoningDeltaEvent)JsonModelCreateCore(ref reader, options);
+        ResponseReasoningDeltaEvent IJsonModel<ResponseReasoningDeltaEvent>.Create(ref Utf8JsonReader reader, ModelReaderWriterOptions options) => (ResponseReasoningDeltaEvent)JsonModelCreateCore(ref reader, options);
 
         protected override StreamingResponseUpdate JsonModelCreateCore(ref Utf8JsonReader reader, ModelReaderWriterOptions options)
         {
-            string format = options.Format == "W" ? ((IPersistableModel<InternalResponseReasoningDeltaEvent>)this).GetFormatFromOptions(options) : options.Format;
+            string format = options.Format == "W" ? ((IPersistableModel<ResponseReasoningDeltaEvent>)this).GetFormatFromOptions(options) : options.Format;
             if (format != "J")
             {
-                throw new FormatException($"The model {nameof(InternalResponseReasoningDeltaEvent)} does not support reading '{format}' format.");
+                throw new FormatException($"The model {nameof(ResponseReasoningDeltaEvent)} does not support reading '{format}' format.");
             }
             using JsonDocument document = JsonDocument.ParseValue(ref reader);
             return DeserializeInternalResponseReasoningDeltaEvent(document.RootElement, options);
         }
 
-        internal static InternalResponseReasoningDeltaEvent DeserializeInternalResponseReasoningDeltaEvent(JsonElement element, ModelReaderWriterOptions options)
+        internal static ResponseReasoningDeltaEvent DeserializeInternalResponseReasoningDeltaEvent(JsonElement element, ModelReaderWriterOptions options)
         {
             if (element.ValueKind == JsonValueKind.Null)
             {
@@ -121,7 +121,7 @@ namespace OpenAI.Responses
                 // Plugin customization: remove options.Format != "W" check
                 additionalBinaryDataProperties.Add(prop.Name, BinaryData.FromString(prop.Value.GetRawText()));
             }
-            return new InternalResponseReasoningDeltaEvent(
+            return new ResponseReasoningDeltaEvent(
                 kind,
                 sequenceNumber,
                 additionalBinaryDataProperties,
@@ -131,25 +131,25 @@ namespace OpenAI.Responses
                 delta);
         }
 
-        BinaryData IPersistableModel<InternalResponseReasoningDeltaEvent>.Write(ModelReaderWriterOptions options) => PersistableModelWriteCore(options);
+        BinaryData IPersistableModel<ResponseReasoningDeltaEvent>.Write(ModelReaderWriterOptions options) => PersistableModelWriteCore(options);
 
         protected override BinaryData PersistableModelWriteCore(ModelReaderWriterOptions options)
         {
-            string format = options.Format == "W" ? ((IPersistableModel<InternalResponseReasoningDeltaEvent>)this).GetFormatFromOptions(options) : options.Format;
+            string format = options.Format == "W" ? ((IPersistableModel<ResponseReasoningDeltaEvent>)this).GetFormatFromOptions(options) : options.Format;
             switch (format)
             {
                 case "J":
                     return ModelReaderWriter.Write(this, options, OpenAIContext.Default);
                 default:
-                    throw new FormatException($"The model {nameof(InternalResponseReasoningDeltaEvent)} does not support writing '{options.Format}' format.");
+                    throw new FormatException($"The model {nameof(ResponseReasoningDeltaEvent)} does not support writing '{options.Format}' format.");
             }
         }
 
-        InternalResponseReasoningDeltaEvent IPersistableModel<InternalResponseReasoningDeltaEvent>.Create(BinaryData data, ModelReaderWriterOptions options) => (InternalResponseReasoningDeltaEvent)PersistableModelCreateCore(data, options);
+        ResponseReasoningDeltaEvent IPersistableModel<ResponseReasoningDeltaEvent>.Create(BinaryData data, ModelReaderWriterOptions options) => (ResponseReasoningDeltaEvent)PersistableModelCreateCore(data, options);
 
         protected override StreamingResponseUpdate PersistableModelCreateCore(BinaryData data, ModelReaderWriterOptions options)
         {
-            string format = options.Format == "W" ? ((IPersistableModel<InternalResponseReasoningDeltaEvent>)this).GetFormatFromOptions(options) : options.Format;
+            string format = options.Format == "W" ? ((IPersistableModel<ResponseReasoningDeltaEvent>)this).GetFormatFromOptions(options) : options.Format;
             switch (format)
             {
                 case "J":
@@ -158,10 +158,10 @@ namespace OpenAI.Responses
                         return DeserializeInternalResponseReasoningDeltaEvent(document.RootElement, options);
                     }
                 default:
-                    throw new FormatException($"The model {nameof(InternalResponseReasoningDeltaEvent)} does not support reading '{options.Format}' format.");
+                    throw new FormatException($"The model {nameof(ResponseReasoningDeltaEvent)} does not support reading '{options.Format}' format.");
             }
         }
 
-        string IPersistableModel<InternalResponseReasoningDeltaEvent>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
+        string IPersistableModel<ResponseReasoningDeltaEvent>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }

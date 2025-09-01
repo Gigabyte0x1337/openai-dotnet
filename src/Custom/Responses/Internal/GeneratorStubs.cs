@@ -162,10 +162,14 @@ namespace OpenAI.Responses;
 [CodeGenType("ResponseMCPListToolsCompletedEvent")] internal partial class InternalResponseMCPListToolsCompletedEvent {}
 [CodeGenType("ResponseMCPListToolsFailedEvent")] internal partial class InternalResponseMCPListToolsFailedEvent {}
 [CodeGenType("ResponseMCPListToolsInProgressEvent")] internal partial class InternalResponseMCPListToolsInProgressEvent {}
-[CodeGenType("ResponseReasoningDeltaEvent")] internal partial class InternalResponseReasoningDeltaEvent {}
-[CodeGenType("ResponseReasoningDoneEvent")] internal partial class InternalResponseReasoningDoneEvent {}
-[CodeGenType("ResponseReasoningSummaryDeltaEvent")] internal partial class InternalResponseReasoningSummaryDeltaEvent {}
-[CodeGenType("ResponseReasoningSummaryDoneEvent")] internal partial class InternalResponseReasoningSummaryDoneEvent {}
+[CodeGenType("ResponseReasoningDeltaEvent")]
+public partial class ResponseReasoningDeltaEvent {}
+[CodeGenType("ResponseReasoningDoneEvent")]
+public partial class ResponseReasoningDoneEvent {}
+[CodeGenType("ResponseReasoningSummaryDeltaEvent")]
+public partial class ResponseReasoningSummaryDeltaEvent {}
+[CodeGenType("ResponseReasoningSummaryDoneEvent")]
+public partial class ResponseReasoningSummaryDoneEvent {}
 [CodeGenType("ResponseCodeInterpreterCallCodeDeltaEvent")] internal partial class InternalResponseCodeInterpreterCallCodeDeltaEvent {}
 [CodeGenType("ResponseCodeInterpreterCallCodeDoneEvent")] internal partial class InternalResponseCodeInterpreterCallCodeDoneEvent {}
 [CodeGenType("ResponseCodeInterpreterCallCompletedEvent")] internal partial class InternalResponseCodeInterpreterCallCompletedEvent {}

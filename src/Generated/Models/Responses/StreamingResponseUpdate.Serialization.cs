@@ -166,13 +166,13 @@ namespace OpenAI.Responses
                     case "response.queued":
                         return StreamingResponseQueuedUpdate.DeserializeStreamingResponseQueuedUpdate(element, options);
                     case "response.reasoning.delta":
-                        return InternalResponseReasoningDeltaEvent.DeserializeInternalResponseReasoningDeltaEvent(element, options);
+                        return ResponseReasoningDeltaEvent.DeserializeInternalResponseReasoningDeltaEvent(element, options);
                     case "response.reasoning.done":
-                        return InternalResponseReasoningDoneEvent.DeserializeInternalResponseReasoningDoneEvent(element, options);
+                        return ResponseReasoningDoneEvent.DeserializeInternalResponseReasoningDoneEvent(element, options);
                     case "response.reasoning_summary.delta":
-                        return InternalResponseReasoningSummaryDeltaEvent.DeserializeInternalResponseReasoningSummaryDeltaEvent(element, options);
+                        return ResponseReasoningSummaryDeltaEvent.DeserializeInternalResponseReasoningSummaryDeltaEvent(element, options);
                     case "response.reasoning_summary.done":
-                        return InternalResponseReasoningSummaryDoneEvent.DeserializeInternalResponseReasoningSummaryDoneEvent(element, options);
+                        return ResponseReasoningSummaryDoneEvent.DeserializeInternalResponseReasoningSummaryDoneEvent(element, options);
                     case "response.code_interpreter_call_code.delta":
                         return InternalResponseCodeInterpreterCallCodeDeltaEvent.DeserializeInternalResponseCodeInterpreterCallCodeDeltaEvent(element, options);
                     case "response.code_interpreter_call_code.done":

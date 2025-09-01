@@ -7,9 +7,9 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalResponseReasoningDoneEvent : StreamingResponseUpdate
+    public partial class ResponseReasoningDoneEvent : StreamingResponseUpdate
     {
-        internal InternalResponseReasoningDoneEvent(int sequenceNumber, string itemId, int outputIndex, int contentIndex, string text) : base(InternalResponseStreamEventType.ResponseReasoningDone, sequenceNumber)
+        internal ResponseReasoningDoneEvent(int sequenceNumber, string itemId, int outputIndex, int contentIndex, string text) : base(InternalResponseStreamEventType.ResponseReasoningDone, sequenceNumber)
         {
             ItemId = itemId;
             OutputIndex = outputIndex;
@@ -17,7 +17,7 @@ namespace OpenAI.Responses
             Text = text;
         }
 
-        internal InternalResponseReasoningDoneEvent(InternalResponseStreamEventType kind, int sequenceNumber, IDictionary<string, BinaryData> additionalBinaryDataProperties, string itemId, int outputIndex, int contentIndex, string text) : base(kind, sequenceNumber, additionalBinaryDataProperties)
+        internal ResponseReasoningDoneEvent(InternalResponseStreamEventType kind, int sequenceNumber, IDictionary<string, BinaryData> additionalBinaryDataProperties, string itemId, int outputIndex, int contentIndex, string text) : base(kind, sequenceNumber, additionalBinaryDataProperties)
         {
             ItemId = itemId;
             OutputIndex = outputIndex;
