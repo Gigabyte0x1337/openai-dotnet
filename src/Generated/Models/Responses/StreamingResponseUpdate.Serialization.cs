@@ -124,13 +124,13 @@ namespace OpenAI.Responses
                     case "response.output_text.done":
                         return StreamingResponseOutputTextDoneUpdate.DeserializeStreamingResponseOutputTextDoneUpdate(element, options);
                     case "response.reasoning_summary_part.added":
-                        return InternalResponseReasoningSummaryPartAddedEvent.DeserializeInternalResponseReasoningSummaryPartAddedEvent(element, options);
+                        return ResponseReasoningSummaryPartAddedEvent.DeserializeInternalResponseReasoningSummaryPartAddedEvent(element, options);
                     case "response.reasoning_summary_part.done":
-                        return InternalResponseReasoningSummaryPartDoneEvent.DeserializeInternalResponseReasoningSummaryPartDoneEvent(element, options);
+                        return ResponseReasoningSummaryPartDoneEvent.DeserializeInternalResponseReasoningSummaryPartDoneEvent(element, options);
                     case "response.reasoning_summary_text.delta":
-                        return InternalResponseReasoningSummaryTextDeltaEvent.DeserializeInternalResponseReasoningSummaryTextDeltaEvent(element, options);
+                        return ResponseReasoningSummaryTextDeltaEvent.DeserializeInternalResponseReasoningSummaryTextDeltaEvent(element, options);
                     case "response.reasoning_summary_text.done":
-                        return InternalResponseReasoningSummaryTextDoneEvent.DeserializeInternalResponseReasoningSummaryTextDoneEvent(element, options);
+                        return ResponseReasoningSummaryTextDoneEvent.DeserializeInternalResponseReasoningSummaryTextDoneEvent(element, options);
                     case "response.web_search_call.completed":
                         return StreamingResponseWebSearchCallCompletedUpdate.DeserializeStreamingResponseWebSearchCallCompletedUpdate(element, options);
                     case "response.web_search_call.in_progress":
