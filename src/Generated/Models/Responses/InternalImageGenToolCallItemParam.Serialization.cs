@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalImageGenToolCallItemParam : IJsonModel<InternalImageGenToolCallItemParam>
+    public partial class InternalImageGenToolCallItemParam : IJsonModel<InternalImageGenToolCallItemParam>
     {
         internal InternalImageGenToolCallItemParam() : this(InternalItemType.ImageGenerationCall, null, null)
         {
@@ -124,3 +124,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalImageGenToolCallItemParam>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

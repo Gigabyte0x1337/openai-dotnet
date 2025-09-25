@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalLogProb
+    public partial class InternalLogProb
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -50,3 +50,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

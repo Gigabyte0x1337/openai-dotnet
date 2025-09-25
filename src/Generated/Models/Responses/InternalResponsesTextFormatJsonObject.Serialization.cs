@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalResponsesTextFormatJsonObject : IJsonModel<InternalResponsesTextFormatJsonObject>
+    public partial class InternalResponsesTextFormatJsonObject : IJsonModel<InternalResponsesTextFormatJsonObject>
     {
         void IJsonModel<InternalResponsesTextFormatJsonObject>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -97,3 +97,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalResponsesTextFormatJsonObject>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.VectorStores
 {
-    internal partial class InternalDotNetCombinedOtherChunkingStrategyParam : FileChunkingStrategy
+    public partial class InternalDotNetCombinedOtherChunkingStrategyParam : FileChunkingStrategy
     {
         public InternalDotNetCombinedOtherChunkingStrategyParam() : this(InternalDotNetCombinedChunkingStrategyParamType.Other, null)
         {
@@ -18,3 +18,4 @@ namespace OpenAI.VectorStores
         }
     }
 }
+

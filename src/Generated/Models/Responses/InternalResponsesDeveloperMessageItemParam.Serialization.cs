@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalResponsesDeveloperMessageItemParam : IJsonModel<InternalResponsesDeveloperMessageItemParam>
+    public partial class InternalResponsesDeveloperMessageItemParam : IJsonModel<InternalResponsesDeveloperMessageItemParam>
     {
         internal InternalResponsesDeveloperMessageItemParam() : this(default, null, InternalResponsesMessageRole.Developer, null)
         {
@@ -128,3 +128,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalResponsesDeveloperMessageItemParam>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

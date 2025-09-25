@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
@@ -6,7 +6,7 @@ namespace OpenAI.Chat;
 
 [CodeGenType("ChatCompletionRequestMessageContentPartImageImageUrl")]
 [CodeGenSuppress("InternalChatCompletionRequestMessageContentPartImageImageUrl", typeof(string))]
-internal partial class InternalChatCompletionRequestMessageContentPartImageImageUrl
+public partial class InternalChatCompletionRequestMessageContentPartImageImageUrl
 {
     private Uri _imageUri;
     private BinaryData _imageBytes;
@@ -57,3 +57,4 @@ internal partial class InternalChatCompletionRequestMessageContentPartImageImage
 
     public string ImageBytesMediaType => _imageBytesMediaType;
 }
+

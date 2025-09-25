@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace OpenAI.Chat;
 
 
 [CodeGenType("ChatCompletionResponseMessage")]
 [CodeGenSuppress("InternalChatCompletionResponseMessage", typeof(IEnumerable<ChatMessageContentPart>))]
-internal partial class InternalChatCompletionResponseMessage
+public partial class InternalChatCompletionResponseMessage
 {
     // CUSTOM: Changed type from InternalChatCompletionResponseMessageRole.
     /// <summary> The role of the author of this message. </summary>
@@ -22,3 +22,4 @@ internal partial class InternalChatCompletionResponseMessage
     [CodeGenMember("FunctionCall")]
     public ChatFunctionCall FunctionCall { get; }
 }
+

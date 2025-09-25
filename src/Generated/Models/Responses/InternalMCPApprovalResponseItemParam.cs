@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalMCPApprovalResponseItemParam : InternalItemParam
+    public partial class InternalMCPApprovalResponseItemParam : InternalItemParam
     {
         public InternalMCPApprovalResponseItemParam(string approvalRequestId, bool approve) : base(InternalItemType.McpApprovalResponse)
         {
@@ -32,3 +32,4 @@ namespace OpenAI.Responses
         public string Reason { get; set; }
     }
 }
+

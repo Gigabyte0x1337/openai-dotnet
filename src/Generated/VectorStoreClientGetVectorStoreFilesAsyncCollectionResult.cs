@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.VectorStores
 {
-    internal partial class VectorStoreClientGetVectorStoreFilesAsyncCollectionResult : AsyncCollectionResult
+    public partial class VectorStoreClientGetVectorStoreFilesAsyncCollectionResult : AsyncCollectionResult
     {
         private readonly VectorStoreClient _client;
         private readonly string _vectorStoreId;
@@ -70,3 +70,4 @@ namespace OpenAI.VectorStores
         }
     }
 }
+

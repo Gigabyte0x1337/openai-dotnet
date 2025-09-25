@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalChatCompletionRequestMessageContentPartAudio : IJsonModel<InternalChatCompletionRequestMessageContentPartAudio>
+    public partial class InternalChatCompletionRequestMessageContentPartAudio : IJsonModel<InternalChatCompletionRequestMessageContentPartAudio>
     {
         internal InternalChatCompletionRequestMessageContentPartAudio()
         {
@@ -106,3 +106,4 @@ namespace OpenAI.Chat
         string IPersistableModel<InternalChatCompletionRequestMessageContentPartAudio>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

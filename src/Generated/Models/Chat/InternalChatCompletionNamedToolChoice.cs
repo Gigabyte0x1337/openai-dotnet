@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalChatCompletionNamedToolChoice
+    public partial class InternalChatCompletionNamedToolChoice
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -37,3 +37,4 @@ namespace OpenAI.Chat
         }
     }
 }
+

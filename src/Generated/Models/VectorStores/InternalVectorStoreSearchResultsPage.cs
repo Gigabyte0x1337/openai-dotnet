@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.VectorStores
 {
-    internal partial class InternalVectorStoreSearchResultsPage
+    public partial class InternalVectorStoreSearchResultsPage
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -49,3 +49,4 @@ namespace OpenAI.VectorStores
         }
     }
 }
+

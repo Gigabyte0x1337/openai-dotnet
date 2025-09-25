@@ -1,4 +1,4 @@
-﻿using System.ClientModel;
+using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Collections.Generic;
 using System.Text.Json;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OpenAI.Batch;
 
-internal class AsyncBatchCollectionResult : AsyncCollectionResult
+public class AsyncBatchCollectionResult : AsyncCollectionResult
 {
     private readonly BatchClient _batchClient;
     private readonly ClientPipeline _pipeline;
@@ -73,3 +73,4 @@ internal class AsyncBatchCollectionResult : AsyncCollectionResult
         return ClientResult.FromResponse(await _pipeline.ProcessMessageAsync(message, options).ConfigureAwait(false));
     }
 }
+

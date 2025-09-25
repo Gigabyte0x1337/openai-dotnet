@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalReasoningItemParam : InternalItemParam
+    public partial class InternalReasoningItemParam : InternalItemParam
     {
         public InternalReasoningItemParam(IEnumerable<ReasoningSummaryPart> summary) : base(InternalItemType.Reasoning)
         {
@@ -30,3 +30,4 @@ namespace OpenAI.Responses
         public IList<ReasoningSummaryPart> Summary { get; }
     }
 }
+

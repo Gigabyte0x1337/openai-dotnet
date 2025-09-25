@@ -4,7 +4,8 @@
 
 namespace OpenAI.Moderations
 {
-    internal static partial class ModerationApplicableInputKindsExtensions
+    public static partial class ModerationApplicableInputKindsExtensions
     {
     }
 }
+

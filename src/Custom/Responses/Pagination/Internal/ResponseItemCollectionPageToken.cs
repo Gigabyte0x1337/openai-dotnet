@@ -9,7 +9,7 @@ using System.Text.Json;
 
 namespace OpenAI.Responses;
 
-internal class ResponseItemCollectionPageToken : ContinuationToken
+public class ResponseItemCollectionPageToken : ContinuationToken
 {
     protected ResponseItemCollectionPageToken(int? limit, string? order, string? after, string? before)
     {

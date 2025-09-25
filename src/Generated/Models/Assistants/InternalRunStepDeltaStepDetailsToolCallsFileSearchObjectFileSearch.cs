@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepDeltaStepDetailsToolCallsFileSearchObjectFileSearch
+    public partial class InternalRunStepDeltaStepDetailsToolCallsFileSearchObjectFileSearch
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -33,3 +33,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepDeltaStepDetailsToolCallsCodeOutputLogsObject : RunStepUpdateCodeInterpreterOutput
+    public partial class InternalRunStepDeltaStepDetailsToolCallsCodeOutputLogsObject : RunStepUpdateCodeInterpreterOutput
     {
         internal InternalRunStepDeltaStepDetailsToolCallsCodeOutputLogsObject(int index) : base(InternalRunStepDetailsCodeInterpreterOutputType.Logs)
         {
@@ -23,3 +23,4 @@ namespace OpenAI.Assistants
         public int Index { get; }
     }
 }
+

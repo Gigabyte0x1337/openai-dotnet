@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalMessageDeltaContentTextAnnotationsFileCitationObject : IJsonModel<InternalMessageDeltaContentTextAnnotationsFileCitationObject>
+    public partial class InternalMessageDeltaContentTextAnnotationsFileCitationObject : IJsonModel<InternalMessageDeltaContentTextAnnotationsFileCitationObject>
     {
         internal InternalMessageDeltaContentTextAnnotationsFileCitationObject() : this(InternalMessageContentTextAnnotationType.FileCitation, null, default, null, null, default, default)
         {
@@ -175,3 +175,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalMessageDeltaContentTextAnnotationsFileCitationObject>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

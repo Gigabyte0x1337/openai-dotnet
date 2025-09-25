@@ -11,7 +11,7 @@ using OpenAI.Graders;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalUnknownEvalGraderParams : IJsonModel<InternalEvalGraderParams>
+    public partial class InternalUnknownEvalGraderParams : IJsonModel<InternalEvalGraderParams>
     {
         internal InternalUnknownEvalGraderParams() : this(default, null)
         {
@@ -102,3 +102,4 @@ namespace OpenAI.Evals
         string IPersistableModel<InternalEvalGraderParams>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

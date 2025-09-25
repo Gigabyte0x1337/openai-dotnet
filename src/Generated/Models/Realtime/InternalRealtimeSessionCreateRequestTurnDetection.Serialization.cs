@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeSessionCreateRequestTurnDetection : IJsonModel<InternalRealtimeSessionCreateRequestTurnDetection>
+    public partial class InternalRealtimeSessionCreateRequestTurnDetection : IJsonModel<InternalRealtimeSessionCreateRequestTurnDetection>
     {
         void IJsonModel<InternalRealtimeSessionCreateRequestTurnDetection>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -223,3 +223,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeSessionCreateRequestTurnDetection>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

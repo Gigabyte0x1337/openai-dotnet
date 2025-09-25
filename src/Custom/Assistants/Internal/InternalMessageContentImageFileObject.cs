@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace OpenAI.Assistants;
 
@@ -10,6 +10,7 @@ namespace OpenAI.Assistants;
 /// create an instance of this type.
 /// </remarks>
 [CodeGenType("MessageContentImageFileObject")]
-internal partial class InternalMessageContentImageFileObject
+public partial class InternalMessageContentImageFileObject
 {
 }
+

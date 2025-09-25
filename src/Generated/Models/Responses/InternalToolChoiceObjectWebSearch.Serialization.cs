@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalToolChoiceObjectWebSearch : IJsonModel<InternalToolChoiceObjectWebSearch>
+    public partial class InternalToolChoiceObjectWebSearch : IJsonModel<InternalToolChoiceObjectWebSearch>
     {
         void IJsonModel<InternalToolChoiceObjectWebSearch>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -97,3 +97,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalToolChoiceObjectWebSearch>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalSubmitToolOutputsRunRequest
+    public partial class InternalSubmitToolOutputsRunRequest
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -39,3 +39,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

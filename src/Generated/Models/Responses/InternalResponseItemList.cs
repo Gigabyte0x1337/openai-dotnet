@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalResponseItemList
+    public partial class InternalResponseItemList
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -49,3 +49,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

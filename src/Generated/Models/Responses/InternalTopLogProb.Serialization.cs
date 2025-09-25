@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalTopLogProb : IJsonModel<InternalTopLogProb>
+    public partial class InternalTopLogProb : IJsonModel<InternalTopLogProb>
     {
         internal InternalTopLogProb() : this(null, default, null, null)
         {
@@ -157,3 +157,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalTopLogProb>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

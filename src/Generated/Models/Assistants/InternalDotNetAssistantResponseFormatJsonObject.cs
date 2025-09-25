@@ -8,7 +8,7 @@ using OpenAI.Internal;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalDotNetAssistantResponseFormatJsonObject : AssistantResponseFormat
+    public partial class InternalDotNetAssistantResponseFormatJsonObject : AssistantResponseFormat
     {
         public InternalDotNetAssistantResponseFormatJsonObject() : this(InternalResponseFormatType.JsonObject, null)
         {
@@ -19,3 +19,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

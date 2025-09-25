@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.FineTuning
 {
-    internal static partial class FineTuningJobEventLevelExtensions
+    public static partial class FineTuningJobEventLevelExtensions
     {
         public static string ToSerialString(this FineTuningJobEventLevel value) => value switch
         {
@@ -34,3 +34,4 @@ namespace OpenAI.FineTuning
         }
     }
 }
+

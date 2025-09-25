@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeClientEventResponseCancel : IJsonModel<InternalRealtimeClientEventResponseCancel>
+    public partial class InternalRealtimeClientEventResponseCancel : IJsonModel<InternalRealtimeClientEventResponseCancel>
     {
         void IJsonModel<InternalRealtimeClientEventResponseCancel>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -114,3 +114,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeClientEventResponseCancel>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

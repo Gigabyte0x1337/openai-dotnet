@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComputerActionDoubleClick : IJsonModel<InternalComputerActionDoubleClick>
+    public partial class InternalComputerActionDoubleClick : IJsonModel<InternalComputerActionDoubleClick>
     {
         internal InternalComputerActionDoubleClick() : this(ComputerCallActionKind.DoubleClick, null, default, default)
         {
@@ -123,3 +123,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalComputerActionDoubleClick>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

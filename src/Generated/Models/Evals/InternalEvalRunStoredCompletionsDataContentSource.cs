@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalEvalRunStoredCompletionsDataContentSource : InternalEvalRunDataContentSource
+    public partial class InternalEvalRunStoredCompletionsDataContentSource : InternalEvalRunDataContentSource
     {
         public InternalEvalRunStoredCompletionsDataContentSource(IDictionary<string, string> metadata) : base(InternalEvalRunDataContentSourceType.StoredCompletions)
         {
@@ -37,3 +37,4 @@ namespace OpenAI.Evals
         public int? Limit { get; set; }
     }
 }
+

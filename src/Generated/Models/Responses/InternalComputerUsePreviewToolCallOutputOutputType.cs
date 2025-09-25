@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal readonly partial struct InternalComputerUsePreviewToolCallOutputOutputType : IEquatable<InternalComputerUsePreviewToolCallOutputOutputType>
+    public readonly partial struct InternalComputerUsePreviewToolCallOutputOutputType : IEquatable<InternalComputerUsePreviewToolCallOutputOutputType>
     {
         private readonly string _value;
         private const string ScreenshotValue = "computer_screenshot";
@@ -41,3 +41,4 @@ namespace OpenAI.Responses
         public override string ToString() => _value;
     }
 }
+

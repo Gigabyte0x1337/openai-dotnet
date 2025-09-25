@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ClientModel.Primitives;
 using System.Collections.Generic;
 using System.Text.Json;
@@ -6,7 +6,7 @@ using System.Text.Json;
 namespace OpenAI.Chat;
 
 [CodeGenSuppress("global::System.ClientModel.Primitives.IJsonModel<OpenAI.Chat.InternalCreateChatCompletionStreamResponseChoice>.Write", typeof(Utf8JsonWriter), typeof(ModelReaderWriterOptions))]
-internal partial class InternalCreateChatCompletionStreamResponseChoice : IJsonModel<InternalCreateChatCompletionStreamResponseChoice>
+public partial class InternalCreateChatCompletionStreamResponseChoice : IJsonModel<InternalCreateChatCompletionStreamResponseChoice>
 {
     // CUSTOM:
     // - Made FinishReason nullable.
@@ -103,3 +103,4 @@ internal partial class InternalCreateChatCompletionStreamResponseChoice : IJsonM
         return new InternalCreateChatCompletionStreamResponseChoice(delta: delta, logprobs: logprobs, index: index, finishReason: finishReason, additionalBinaryDataProperties: serializedAdditionalRawData);
     }
 }
+

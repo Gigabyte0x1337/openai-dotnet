@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalEvalCustomDataSourceConfigParams : IJsonModel<InternalEvalCustomDataSourceConfigParams>
+    public partial class InternalEvalCustomDataSourceConfigParams : IJsonModel<InternalEvalCustomDataSourceConfigParams>
     {
         internal InternalEvalCustomDataSourceConfigParams() : this(InternalEvalDataSourceConfigType.Custom, null, null, default)
         {
@@ -157,3 +157,4 @@ namespace OpenAI.Evals
         string IPersistableModel<InternalEvalCustomDataSourceConfigParams>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

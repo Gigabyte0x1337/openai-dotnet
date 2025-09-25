@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalToolChoiceObjectFunction : InternalToolChoiceObject
+    public partial class InternalToolChoiceObjectFunction : InternalToolChoiceObject
     {
         public InternalToolChoiceObjectFunction(string name) : base(InternalToolChoiceObjectType.Function)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Responses
         public string Name { get; set; }
     }
 }
+

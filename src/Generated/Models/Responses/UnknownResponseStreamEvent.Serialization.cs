@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class UnknownResponseStreamEvent : IJsonModel<StreamingResponseUpdate>
+    public partial class UnknownResponseStreamEvent : IJsonModel<StreamingResponseUpdate>
     {
         internal UnknownResponseStreamEvent() : this(default, default, null)
         {
@@ -107,3 +107,4 @@ namespace OpenAI.Responses
         string IPersistableModel<StreamingResponseUpdate>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

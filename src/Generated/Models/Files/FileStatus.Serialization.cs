@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Files
 {
-    internal static partial class FileStatusExtensions
+    public static partial class FileStatusExtensions
     {
         public static string ToSerialString(this FileStatus value) => value switch
         {
@@ -34,3 +34,4 @@ namespace OpenAI.Files
         }
     }
 }
+

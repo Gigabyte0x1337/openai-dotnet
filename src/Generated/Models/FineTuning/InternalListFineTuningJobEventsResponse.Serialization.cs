@@ -11,7 +11,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class InternalListFineTuningJobEventsResponse : IJsonModel<InternalListFineTuningJobEventsResponse>
+    public partial class InternalListFineTuningJobEventsResponse : IJsonModel<InternalListFineTuningJobEventsResponse>
     {
         internal InternalListFineTuningJobEventsResponse() : this(null, null, default, null)
         {
@@ -165,3 +165,4 @@ namespace OpenAI.FineTuning
         }
     }
 }
+

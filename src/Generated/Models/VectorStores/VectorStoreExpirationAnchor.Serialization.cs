@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.VectorStores
 {
-    internal static partial class VectorStoreExpirationAnchorExtensions
+    public static partial class VectorStoreExpirationAnchorExtensions
     {
         public static string ToSerialString(this VectorStoreExpirationAnchor value) => value switch
         {
@@ -24,3 +24,4 @@ namespace OpenAI.VectorStores
         }
     }
 }
+

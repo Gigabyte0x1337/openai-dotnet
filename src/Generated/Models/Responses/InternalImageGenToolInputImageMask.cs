@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalImageGenToolInputImageMask
+    public partial class InternalImageGenToolInputImageMask
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -33,3 +33,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

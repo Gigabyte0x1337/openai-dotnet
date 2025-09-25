@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalEvalLogsDataSourceConfigParams : IJsonModel<InternalEvalLogsDataSourceConfigParams>
+    public partial class InternalEvalLogsDataSourceConfigParams : IJsonModel<InternalEvalLogsDataSourceConfigParams>
     {
         void IJsonModel<InternalEvalLogsDataSourceConfigParams>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -135,3 +135,4 @@ namespace OpenAI.Evals
         string IPersistableModel<InternalEvalLogsDataSourceConfigParams>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

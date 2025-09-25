@@ -9,7 +9,7 @@ using System.Text.Json;
 
 namespace OpenAI.VectorStores;
 
-internal class VectorStoreFileBatchCollectionPageToken : ContinuationToken
+public class VectorStoreFileBatchCollectionPageToken : ContinuationToken
 {
     protected VectorStoreFileBatchCollectionPageToken(string vectorStoreId, string batchId, int? limit, string? order, string? after, string? before, string? filter)
     {

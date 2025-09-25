@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalMessageContentImageUrlObjectImageUrl : IJsonModel<InternalMessageContentImageUrlObjectImageUrl>
+    public partial class InternalMessageContentImageUrlObjectImageUrl : IJsonModel<InternalMessageContentImageUrlObjectImageUrl>
     {
         internal InternalMessageContentImageUrlObjectImageUrl()
         {
@@ -136,3 +136,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalMessageContentImageUrlObjectImageUrl>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

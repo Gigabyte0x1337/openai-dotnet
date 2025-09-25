@@ -9,7 +9,7 @@ using OpenAI.Chat;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class InternalTodoFineTuneChatRequestInput
+    public partial class InternalTodoFineTuneChatRequestInput
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -42,3 +42,4 @@ namespace OpenAI.FineTuning
         }
     }
 }
+

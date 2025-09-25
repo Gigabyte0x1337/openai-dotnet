@@ -2,7 +2,7 @@ using System;
 
 namespace OpenAI.Responses;
 
-internal static partial class ResponseToolChoiceKindExtensions
+public static partial class ResponseToolChoiceKindExtensions
 {
     public static string ToSerialString(this ResponseToolChoiceKind value) => value switch
     {

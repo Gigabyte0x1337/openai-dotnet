@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRequiredFunctionToolCall
+    public partial class InternalRequiredFunctionToolCall
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -36,3 +36,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

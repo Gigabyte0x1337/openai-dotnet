@@ -1,4 +1,4 @@
-﻿using System.ClientModel;
+using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace OpenAI.FineTuning;
 
 [Experimental("OPENAI001")]
-internal class AsyncFineTuningCheckpointCollectionResult : AsyncCollectionResult<FineTuningCheckpoint>
+public class AsyncFineTuningCheckpointCollectionResult : AsyncCollectionResult<FineTuningCheckpoint>
 {
     private readonly FineTuningJob _job;
     private readonly RequestOptions? _options;
@@ -85,3 +85,4 @@ internal class AsyncFineTuningCheckpointCollectionResult : AsyncCollectionResult
         return list.Data.ToAsyncEnumerable(_cancellationToken);
     }
 }
+

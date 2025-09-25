@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Audio
 {
-    internal partial class InternalCreateTranscriptionResponseVerboseJson : IJsonModel<InternalCreateTranscriptionResponseVerboseJson>
+    public partial class InternalCreateTranscriptionResponseVerboseJson : IJsonModel<InternalCreateTranscriptionResponseVerboseJson>
     {
         internal InternalCreateTranscriptionResponseVerboseJson() : this(null, null, default, null, null, null, null)
         {
@@ -217,3 +217,4 @@ namespace OpenAI.Audio
         string IPersistableModel<InternalCreateTranscriptionResponseVerboseJson>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

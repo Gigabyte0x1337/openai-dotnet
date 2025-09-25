@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Batch
 {
-    internal readonly partial struct InternalCreateBatchRequestEndpoint : IEquatable<InternalCreateBatchRequestEndpoint>
+    public readonly partial struct InternalCreateBatchRequestEndpoint : IEquatable<InternalCreateBatchRequestEndpoint>
     {
         private readonly string _value;
         private const string V1ChatCompletionsValue = "/v1/chat/completions";
@@ -44,3 +44,4 @@ namespace OpenAI.Batch
         public override string ToString() => _value;
     }
 }
+

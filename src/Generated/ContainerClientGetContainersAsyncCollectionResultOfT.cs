@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace OpenAI.Containers
 {
-    internal partial class ContainerClientGetContainersAsyncCollectionResultOfT : AsyncCollectionResult<ContainerResource>
+    public partial class ContainerClientGetContainersAsyncCollectionResultOfT : AsyncCollectionResult<ContainerResource>
     {
         private readonly ContainerClient _client;
         private readonly int? _limit;
@@ -71,3 +71,4 @@ namespace OpenAI.Containers
         }
     }
 }
+

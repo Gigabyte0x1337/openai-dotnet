@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalToolChoiceObjectFunction : IJsonModel<InternalToolChoiceObjectFunction>
+    public partial class InternalToolChoiceObjectFunction : IJsonModel<InternalToolChoiceObjectFunction>
     {
         internal InternalToolChoiceObjectFunction() : this(InternalToolChoiceObjectType.Function, null, null)
         {
@@ -112,3 +112,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalToolChoiceObjectFunction>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

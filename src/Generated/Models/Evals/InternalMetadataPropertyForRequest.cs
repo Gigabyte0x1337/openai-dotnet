@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalMetadataPropertyForRequest
+    public partial class InternalMetadataPropertyForRequest
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -32,3 +32,4 @@ namespace OpenAI.Evals
         }
     }
 }
+

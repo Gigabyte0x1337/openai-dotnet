@@ -11,7 +11,7 @@ using OpenAI.Responses;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalEvalResponsesRunDataSourceParamsSamplingParamsText : IJsonModel<InternalEvalResponsesRunDataSourceParamsSamplingParamsText>
+    public partial class InternalEvalResponsesRunDataSourceParamsSamplingParamsText : IJsonModel<InternalEvalResponsesRunDataSourceParamsSamplingParamsText>
     {
         void IJsonModel<InternalEvalResponsesRunDataSourceParamsSamplingParamsText>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -126,3 +126,4 @@ namespace OpenAI.Evals
         string IPersistableModel<InternalEvalResponsesRunDataSourceParamsSamplingParamsText>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

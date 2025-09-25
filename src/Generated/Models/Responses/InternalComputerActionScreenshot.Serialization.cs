@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComputerActionScreenshot : IJsonModel<InternalComputerActionScreenshot>
+    public partial class InternalComputerActionScreenshot : IJsonModel<InternalComputerActionScreenshot>
     {
         void IJsonModel<InternalComputerActionScreenshot>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -97,3 +97,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalComputerActionScreenshot>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

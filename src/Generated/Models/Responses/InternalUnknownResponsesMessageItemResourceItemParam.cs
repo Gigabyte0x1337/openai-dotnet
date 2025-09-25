@@ -7,10 +7,11 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalUnknownResponsesMessageItemResourceItemParam : InternalResponsesMessageItemParam
+    public partial class InternalUnknownResponsesMessageItemResourceItemParam : InternalResponsesMessageItemParam
     {
         internal InternalUnknownResponsesMessageItemResourceItemParam(InternalItemType kind, IDictionary<string, BinaryData> additionalBinaryDataProperties, InternalResponsesMessageRole role) : base(kind != default ? kind : "unknown", additionalBinaryDataProperties, role != default ? role : "unknown")
         {
         }
     }
 }
+

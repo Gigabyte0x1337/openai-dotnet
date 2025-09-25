@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace OpenAI;
 
-internal static class CancellationTokenExtensions
+public static class CancellationTokenExtensions
 {
     public static RequestOptions ToRequestOptions(this CancellationToken cancellationToken, bool streaming = false)
     {
@@ -23,3 +23,4 @@ internal static class CancellationTokenExtensions
     private static RequestOptions StreamRequestOptions => _streamRequestOptions ??= new() { BufferResponse = false };
     private static RequestOptions _streamRequestOptions;
 }
+

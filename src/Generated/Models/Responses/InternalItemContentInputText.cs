@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalItemContentInputText : ResponseContentPart
+    public partial class InternalItemContentInputText : ResponseContentPart
     {
         public InternalItemContentInputText(string internalText) : base(InternalItemContentType.InputText)
         {
@@ -23,3 +23,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalCreateAssistantRequestToolResources : IJsonModel<InternalCreateAssistantRequestToolResources>
+    public partial class InternalCreateAssistantRequestToolResources : IJsonModel<InternalCreateAssistantRequestToolResources>
     {
         void IJsonModel<InternalCreateAssistantRequestToolResources>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -140,3 +140,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalCreateAssistantRequestToolResources>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

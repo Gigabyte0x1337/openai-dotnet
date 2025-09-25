@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalAssistantRunClientGetRunsCollectionResult : CollectionResult
+    public partial class InternalAssistantRunClientGetRunsCollectionResult : CollectionResult
     {
         private readonly InternalAssistantRunClient _client;
         private readonly string _threadId;
@@ -68,3 +68,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class InternalCreateFineTuningCheckpointPermissionRequest : IJsonModel<InternalCreateFineTuningCheckpointPermissionRequest>
+    public partial class InternalCreateFineTuningCheckpointPermissionRequest : IJsonModel<InternalCreateFineTuningCheckpointPermissionRequest>
     {
         internal InternalCreateFineTuningCheckpointPermissionRequest() : this(null, null)
         {
@@ -147,3 +147,4 @@ namespace OpenAI.FineTuning
         string IPersistableModel<InternalCreateFineTuningCheckpointPermissionRequest>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

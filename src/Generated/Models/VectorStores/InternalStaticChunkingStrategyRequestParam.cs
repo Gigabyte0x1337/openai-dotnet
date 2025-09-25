@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.VectorStores
 {
-    internal partial class InternalStaticChunkingStrategyRequestParam : InternalChunkingStrategyRequestParam
+    public partial class InternalStaticChunkingStrategyRequestParam : InternalChunkingStrategyRequestParam
     {
         internal InternalStaticChunkingStrategyRequestParam(InternalStaticChunkingStrategy @static) : base(InternalChunkingStrategyRequestParamType.Static)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.VectorStores
         internal InternalStaticChunkingStrategy Static { get; }
     }
 }
+

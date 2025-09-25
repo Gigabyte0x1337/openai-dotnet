@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeServerEventOutputAudioBufferStarted : IJsonModel<InternalRealtimeServerEventOutputAudioBufferStarted>
+    public partial class InternalRealtimeServerEventOutputAudioBufferStarted : IJsonModel<InternalRealtimeServerEventOutputAudioBufferStarted>
     {
         internal InternalRealtimeServerEventOutputAudioBufferStarted() : this(RealtimeUpdateKind.OutputAudioBufferStarted, null, null, null)
         {
@@ -118,3 +118,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeServerEventOutputAudioBufferStarted>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

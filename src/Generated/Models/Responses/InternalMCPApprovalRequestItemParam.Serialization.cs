@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalMCPApprovalRequestItemParam : IJsonModel<InternalMCPApprovalRequestItemParam>
+    public partial class InternalMCPApprovalRequestItemParam : IJsonModel<InternalMCPApprovalRequestItemParam>
     {
         internal InternalMCPApprovalRequestItemParam() : this(InternalItemType.McpApprovalRequest, null, null, null, null)
         {
@@ -134,3 +134,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalMCPApprovalRequestItemParam>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

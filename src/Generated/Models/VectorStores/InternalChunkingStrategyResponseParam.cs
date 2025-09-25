@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.VectorStores
 {
-    internal abstract partial class InternalChunkingStrategyResponseParam
+    public abstract partial class InternalChunkingStrategyResponseParam
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -31,3 +31,4 @@ namespace OpenAI.VectorStores
         }
     }
 }
+

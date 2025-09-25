@@ -11,7 +11,7 @@ using OpenAI.Internal;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalDotNetAssistantResponseFormatJsonSchema : IJsonModel<InternalDotNetAssistantResponseFormatJsonSchema>
+    public partial class InternalDotNetAssistantResponseFormatJsonSchema : IJsonModel<InternalDotNetAssistantResponseFormatJsonSchema>
     {
         internal InternalDotNetAssistantResponseFormatJsonSchema() : this(InternalResponseFormatType.JsonSchema, null, null)
         {
@@ -113,3 +113,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalDotNetAssistantResponseFormatJsonSchema>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

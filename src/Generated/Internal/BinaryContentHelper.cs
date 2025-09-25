@@ -9,7 +9,7 @@ using System.Text.Json;
 
 namespace OpenAI
 {
-    internal static partial class BinaryContentHelper
+    public static partial class BinaryContentHelper
     {
         public static BinaryContent FromEnumerable<T>(IEnumerable<T> enumerable)
             where T : notnull
@@ -132,3 +132,4 @@ namespace OpenAI
         }
     }
 }
+

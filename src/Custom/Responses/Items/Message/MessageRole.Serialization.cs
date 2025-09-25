@@ -2,7 +2,7 @@ using System;
 
 namespace OpenAI.Responses;
 
-internal static partial class MessageRoleExtensions
+public static partial class MessageRoleExtensions
 {
     public static string ToSerialString(this MessageRole value) => value switch
     {
@@ -34,3 +34,4 @@ internal static partial class MessageRoleExtensions
         return MessageRole.Unknown;
     }
 }
+

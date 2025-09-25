@@ -22,7 +22,7 @@ using OpenAI.VectorStores;
 
 namespace OpenAI
 {
-    internal static partial class OpenAIModelFactory
+    public static partial class OpenAIModelFactory
     {
         public static Assistant Assistant(string id = default, string @object = default, DateTimeOffset createdAt = default, string name = default, string description = default, string model = default, string instructions = default, IEnumerable<ToolDefinition> tools = default, ToolResources toolResources = default, IReadOnlyDictionary<string, string> metadata = default, float? temperature = default, float? nucleusSamplingFactor = default, AssistantResponseFormat responseFormat = default)
         {
@@ -1353,3 +1353,4 @@ namespace OpenAI
         }
     }
 }
+

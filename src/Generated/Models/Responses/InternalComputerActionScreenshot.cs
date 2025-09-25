@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComputerActionScreenshot : ComputerCallAction
+    public partial class InternalComputerActionScreenshot : ComputerCallAction
     {
         public InternalComputerActionScreenshot() : this(ComputerCallActionKind.Screenshot, null)
         {
@@ -18,3 +18,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalResponsesTextFormatJsonObject : ResponseTextFormat
+    public partial class InternalResponsesTextFormatJsonObject : ResponseTextFormat
     {
         public InternalResponsesTextFormatJsonObject() : this(InternalResponsesTextFormatType.JsonObject, null)
         {
@@ -18,3 +18,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.VectorStores
 {
-    internal partial class InternalVectorStoreFileBatchObjectFileCounts : IJsonModel<InternalVectorStoreFileBatchObjectFileCounts>
+    public partial class InternalVectorStoreFileBatchObjectFileCounts : IJsonModel<InternalVectorStoreFileBatchObjectFileCounts>
     {
         internal InternalVectorStoreFileBatchObjectFileCounts()
         {
@@ -175,3 +175,4 @@ namespace OpenAI.VectorStores
         string IPersistableModel<InternalVectorStoreFileBatchObjectFileCounts>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

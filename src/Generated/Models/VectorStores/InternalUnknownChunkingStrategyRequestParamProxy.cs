@@ -7,10 +7,11 @@ using System.Collections.Generic;
 
 namespace OpenAI.VectorStores
 {
-    internal partial class InternalUnknownChunkingStrategyRequestParamProxy : InternalChunkingStrategyRequestParam
+    public partial class InternalUnknownChunkingStrategyRequestParamProxy : InternalChunkingStrategyRequestParam
     {
         internal InternalUnknownChunkingStrategyRequestParamProxy(InternalChunkingStrategyRequestParamType kind, IDictionary<string, BinaryData> additionalBinaryDataProperties) : base(kind != default ? kind : "unknown", additionalBinaryDataProperties)
         {
         }
     }
 }
+

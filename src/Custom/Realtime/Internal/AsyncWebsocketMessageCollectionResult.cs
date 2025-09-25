@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OpenAI.Realtime;
 
-internal partial class AsyncWebsocketMessageCollectionResult : AsyncCollectionResult<ClientResult>
+public partial class AsyncWebsocketMessageCollectionResult : AsyncCollectionResult<ClientResult>
 {
     private readonly WebSocket _webSocket;
     private readonly CancellationToken _cancellationToken;
@@ -41,3 +41,4 @@ internal partial class AsyncWebsocketMessageCollectionResult : AsyncCollectionRe
         yield return page;
     }
 }
+

@@ -1,4 +1,4 @@
-﻿using OpenAI.Assistants;
+using OpenAI.Assistants;
 using System;
 using System.ClientModel;
 using System.ClientModel.Primitives;
@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 namespace OpenAI.FineTuning;
 
 [Experimental("OPENAI001")]
-internal class AsyncFineTuningJobCollectionResult : AsyncCollectionResult<FineTuningJob>
+public class AsyncFineTuningJobCollectionResult : AsyncCollectionResult<FineTuningJob>
 {
     private readonly FineTuningClient _fineTuningClient;
     private readonly ClientPipeline _pipeline;
@@ -99,3 +99,4 @@ internal class AsyncFineTuningJobCollectionResult : AsyncCollectionResult<FineTu
         return _fineTuningClient.CreateJobsFromPageResponse(response).ToAsyncEnumerable(_cancellationToken);
     }
 }
+

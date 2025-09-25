@@ -1,0 +1,48 @@
+name: Publish to GitHub Packages
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.x'
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build and Pack
+        run: dotnet pack
+          --configuration Release
+          --output "${{ github.workspace }}/artifacts/packages"
+
+      - name: NuGet authenticate (GitHub Packages)
+        run: dotnet nuget add source
+          "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
+          --name "github"
+          --username "${{ github.actor }}"
+          --password "${{ secrets.TOKEN }}"
+          --store-password-in-clear-text
+
+      - name: Push package to GitHub Packages
+        run: dotnet nuget push
+          "${{ github.workspace }}/artifacts/packages/*.nupkg"
+          --source "github"
+          --api-key "${{ secrets.TOKEN }}"
+          --skip-duplicate

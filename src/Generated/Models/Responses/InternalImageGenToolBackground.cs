@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal readonly partial struct InternalImageGenToolBackground : IEquatable<InternalImageGenToolBackground>
+    public readonly partial struct InternalImageGenToolBackground : IEquatable<InternalImageGenToolBackground>
     {
         private readonly string _value;
         private const string TransparentValue = "transparent";
@@ -47,3 +47,4 @@ namespace OpenAI.Responses
         public override string ToString() => _value;
     }
 }
+

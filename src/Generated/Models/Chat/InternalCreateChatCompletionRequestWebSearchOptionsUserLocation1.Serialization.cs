@@ -11,7 +11,7 @@ using OpenAI.Internal;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalCreateChatCompletionRequestWebSearchOptionsUserLocation1 : IJsonModel<InternalCreateChatCompletionRequestWebSearchOptionsUserLocation1>
+    public partial class InternalCreateChatCompletionRequestWebSearchOptionsUserLocation1 : IJsonModel<InternalCreateChatCompletionRequestWebSearchOptionsUserLocation1>
     {
         internal InternalCreateChatCompletionRequestWebSearchOptionsUserLocation1()
         {
@@ -137,3 +137,4 @@ namespace OpenAI.Chat
         string IPersistableModel<InternalCreateChatCompletionRequestWebSearchOptionsUserLocation1>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

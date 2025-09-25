@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class UnknownRunStepObjectStepDetails : IJsonModel<RunStepDetails>
+    public partial class UnknownRunStepObjectStepDetails : IJsonModel<RunStepDetails>
     {
         internal UnknownRunStepObjectStepDetails() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<RunStepDetails>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeResponseAudioContentPart : ConversationContentPart
+    public partial class InternalRealtimeResponseAudioContentPart : ConversationContentPart
     {
         internal InternalRealtimeResponseAudioContentPart(string internalTranscriptValue) : base(ConversationContentPartKind.OutputAudio)
         {
@@ -20,3 +20,4 @@ namespace OpenAI.Realtime
         }
     }
 }
+

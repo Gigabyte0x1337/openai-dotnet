@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Assistants
 {
-    internal static partial class RunStepFileSearchResultContentKindExtensions
+    public static partial class RunStepFileSearchResultContentKindExtensions
     {
         public static string ToSerialString(this RunStepFileSearchResultContentKind value) => value switch
         {
@@ -24,3 +24,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

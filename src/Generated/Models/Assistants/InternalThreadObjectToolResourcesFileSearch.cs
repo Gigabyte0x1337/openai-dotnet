@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalThreadObjectToolResourcesFileSearch
+    public partial class InternalThreadObjectToolResourcesFileSearch
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -32,3 +32,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

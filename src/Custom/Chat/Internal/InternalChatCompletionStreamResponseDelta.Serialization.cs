@@ -1,11 +1,11 @@
-﻿using System.ClientModel.Primitives;
+using System.ClientModel.Primitives;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
 
 namespace OpenAI.Chat;
 
 [CodeGenSerialization(nameof(Content), SerializationValueHook = nameof(SerializeContentValue), DeserializationValueHook = nameof(DeserializeContentValue))]
-internal partial class InternalChatCompletionStreamResponseDelta
+public partial class InternalChatCompletionStreamResponseDelta
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private void SerializeContentValue(Utf8JsonWriter writer, ModelReaderWriterOptions options)
@@ -17,3 +17,4 @@ internal partial class InternalChatCompletionStreamResponseDelta
         content = ChatMessageContent.DeserializeChatMessageContent(property.Value, options);
     }
 }
+

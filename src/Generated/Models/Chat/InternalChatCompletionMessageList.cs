@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalChatCompletionMessageList
+    public partial class InternalChatCompletionMessageList
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -49,3 +49,4 @@ namespace OpenAI.Chat
         }
     }
 }
+

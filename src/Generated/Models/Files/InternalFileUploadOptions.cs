@@ -8,7 +8,7 @@ using System.IO;
 
 namespace OpenAI.Files
 {
-    internal partial class InternalFileUploadOptions
+    public partial class InternalFileUploadOptions
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -26,3 +26,4 @@ namespace OpenAI.Files
         }
     }
 }
+

@@ -7,10 +7,11 @@ using System.Collections.Generic;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class UnknownFineTuningIntegration : InternalFineTuningIntegration
+    public partial class UnknownFineTuningIntegration : InternalFineTuningIntegration
     {
         internal UnknownFineTuningIntegration(InternalFineTuningIntegrationType kind, IDictionary<string, BinaryData> additionalBinaryDataProperties) : base(kind != default ? kind : "unknown", additionalBinaryDataProperties)
         {
         }
     }
 }
+

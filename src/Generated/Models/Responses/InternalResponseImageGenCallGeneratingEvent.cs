@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalResponseImageGenCallGeneratingEvent : StreamingResponseUpdate
+    public partial class InternalResponseImageGenCallGeneratingEvent : StreamingResponseUpdate
     {
         internal InternalResponseImageGenCallGeneratingEvent(int sequenceNumber, int outputIndex, string itemId) : base(InternalResponseStreamEventType.ResponseImageGenerationCallGenerating, sequenceNumber)
         {
@@ -26,3 +26,4 @@ namespace OpenAI.Responses
         public string ItemId { get; }
     }
 }
+

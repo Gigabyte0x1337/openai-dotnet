@@ -1,4 +1,4 @@
-﻿using System.ClientModel;
+using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Collections.Generic;
 using System.Text.Json;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OpenAI.VectorStores;
 
-internal class AsyncVectorStoreCollectionResult : AsyncCollectionResult<VectorStore>
+public class AsyncVectorStoreCollectionResult : AsyncCollectionResult<VectorStore>
 {
     private readonly VectorStoreClient _vectorStoreClient;
     private readonly ClientPipeline _pipeline;
@@ -87,3 +87,4 @@ internal class AsyncVectorStoreCollectionResult : AsyncCollectionResult<VectorSt
         return ClientResult.FromResponse(await _pipeline.ProcessMessageAsync(message, options).ConfigureAwait(false));
     }
 }
+

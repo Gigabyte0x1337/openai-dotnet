@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Internal
 {
-    internal partial class InternalResponseFormatJsonSchema : InternalResponseFormat
+    public partial class InternalResponseFormatJsonSchema : InternalResponseFormat
     {
         internal InternalResponseFormatJsonSchema(InternalResponseFormatJsonSchemaJsonSchema jsonSchema) : base(InternalResponseFormatType.JsonSchema)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Internal
         internal InternalResponseFormatJsonSchemaJsonSchema JsonSchema { get; set; }
     }
 }
+

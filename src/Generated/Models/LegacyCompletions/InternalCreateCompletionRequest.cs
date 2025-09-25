@@ -9,7 +9,7 @@ using OpenAI.Chat;
 
 namespace OpenAI.LegacyCompletions
 {
-    internal partial class InternalCreateCompletionRequest
+    public partial class InternalCreateCompletionRequest
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -87,3 +87,4 @@ namespace OpenAI.LegacyCompletions
         }
     }
 }
+

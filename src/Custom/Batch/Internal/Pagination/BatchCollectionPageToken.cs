@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Diagnostics;
@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace OpenAI.Batch;
 
-internal class BatchCollectionPageToken : ContinuationToken
+public class BatchCollectionPageToken : ContinuationToken
 {
     protected BatchCollectionPageToken(int? limit, string? after)
     {
@@ -92,3 +92,4 @@ internal class BatchCollectionPageToken : ContinuationToken
         return new(limit, lastId);
     }
 }
+

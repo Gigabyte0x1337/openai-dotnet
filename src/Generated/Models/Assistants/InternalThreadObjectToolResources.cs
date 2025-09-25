@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalThreadObjectToolResources
+    public partial class InternalThreadObjectToolResources
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -33,3 +33,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

@@ -1,4 +1,4 @@
-﻿using System.ClientModel;
+using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Collections.Generic;
 using System.Text.Json;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OpenAI.Responses;
 
-internal class AsyncResponseItemCollectionResult : AsyncCollectionResult<ResponseItem>
+public class AsyncResponseItemCollectionResult : AsyncCollectionResult<ResponseItem>
 {
     private readonly OpenAIResponseClient _parentClient;
     private readonly RequestOptions? _options;
@@ -87,3 +87,4 @@ internal class AsyncResponseItemCollectionResult : AsyncCollectionResult<Respons
         return ClientResult.FromResponse(await _parentClient.Pipeline.ProcessMessageAsync(message, options).ConfigureAwait(false));
     }
 }
+

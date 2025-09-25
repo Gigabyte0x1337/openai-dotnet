@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalResponsesMessageItemParam : InternalItemParam
+    public partial class InternalResponsesMessageItemParam : InternalItemParam
     {
         internal InternalResponsesMessageItemParam(InternalResponsesMessageRole role) : base(InternalItemType.Message)
         {
@@ -22,3 +22,4 @@ namespace OpenAI.Responses
         internal InternalResponsesMessageRole Role { get; set; }
     }
 }
+

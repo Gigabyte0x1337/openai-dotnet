@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal readonly partial struct InternalRealtimeResponseStatusDetailsType : IEquatable<InternalRealtimeResponseStatusDetailsType>
+    public readonly partial struct InternalRealtimeResponseStatusDetailsType : IEquatable<InternalRealtimeResponseStatusDetailsType>
     {
         private readonly string _value;
         private const string CompletedValue = "completed";
@@ -50,3 +50,4 @@ namespace OpenAI.Realtime
         public override string ToString() => _value;
     }
 }
+

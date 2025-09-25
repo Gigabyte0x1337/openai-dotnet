@@ -1,4 +1,4 @@
-﻿using System.ClientModel;
+using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Collections.Generic;
 using System.Text.Json;
@@ -7,7 +7,7 @@ using System.Text.Json;
 
 namespace OpenAI.VectorStores;
 
-internal class VectorStoreCollectionResult : CollectionResult<VectorStore>
+public class VectorStoreCollectionResult : CollectionResult<VectorStore>
 {
     private readonly VectorStoreClient _vectorStoreClient;
     private readonly ClientPipeline _pipeline;
@@ -94,3 +94,4 @@ internal class VectorStoreCollectionResult : CollectionResult<VectorStore>
         return ClientResult.FromResponse(_pipeline.ProcessMessage(message, options));
     }
 }
+

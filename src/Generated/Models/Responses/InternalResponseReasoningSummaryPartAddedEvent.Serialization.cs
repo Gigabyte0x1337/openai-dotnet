@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalResponseReasoningSummaryPartAddedEvent : IJsonModel<InternalResponseReasoningSummaryPartAddedEvent>
+    public partial class InternalResponseReasoningSummaryPartAddedEvent : IJsonModel<InternalResponseReasoningSummaryPartAddedEvent>
     {
         internal InternalResponseReasoningSummaryPartAddedEvent() : this(InternalResponseStreamEventType.ResponseReasoningSummaryPartAdded, default, null, null, default, default, null)
         {
@@ -158,3 +158,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalResponseReasoningSummaryPartAddedEvent>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

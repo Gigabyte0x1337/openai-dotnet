@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Audio
 {
-    internal partial class InternalCreateTranscriptionResponseJsonLogprob : IJsonModel<InternalCreateTranscriptionResponseJsonLogprob>
+    public partial class InternalCreateTranscriptionResponseJsonLogprob : IJsonModel<InternalCreateTranscriptionResponseJsonLogprob>
     {
         void IJsonModel<InternalCreateTranscriptionResponseJsonLogprob>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -161,3 +161,4 @@ namespace OpenAI.Audio
         string IPersistableModel<InternalCreateTranscriptionResponseJsonLogprob>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

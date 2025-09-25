@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepDeltaStepDetailsToolCallsCodeObjectCodeInterpreter
+    public partial class InternalRunStepDeltaStepDetailsToolCallsCodeObjectCodeInterpreter
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -35,3 +35,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

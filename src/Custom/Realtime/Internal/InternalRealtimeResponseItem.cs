@@ -5,7 +5,7 @@ namespace OpenAI.Realtime;
 
 [Experimental("OPENAI002")]
 [CodeGenType("RealtimeConversationResponseItem")]
-internal partial class InternalRealtimeResponseItem
+public partial class InternalRealtimeResponseItem
 {
     public string ResponseId
         => (this as InternalRealtimeResponseMessageItem)?.ResponseId
@@ -31,3 +31,4 @@ internal partial class InternalRealtimeResponseItem
     public string FunctionCallOutput =>
         (this as InternalRealtimeResponseFunctionCallOutputItem)?.Output;
 }
+

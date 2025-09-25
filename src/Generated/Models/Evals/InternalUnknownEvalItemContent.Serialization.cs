@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalUnknownEvalItemContent : IJsonModel<InternalEvalItemContent>
+    public partial class InternalUnknownEvalItemContent : IJsonModel<InternalEvalItemContent>
     {
         internal InternalUnknownEvalItemContent() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Evals
         string IPersistableModel<InternalEvalItemContent>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -7,10 +7,11 @@ using System.Collections.Generic;
 
 namespace OpenAI.Realtime
 {
-    internal partial class UnknownRealtimeResponseItem : InternalRealtimeResponseItem
+    public partial class UnknownRealtimeResponseItem : InternalRealtimeResponseItem
     {
         internal UnknownRealtimeResponseItem(string @object, InternalRealtimeItemType kind, string id, IDictionary<string, BinaryData> additionalBinaryDataProperties) : base(@object, kind != default ? kind : "unknown", id, additionalBinaryDataProperties)
         {
         }
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeServerEventResponseFunctionCallArgumentsDone : IJsonModel<InternalRealtimeServerEventResponseFunctionCallArgumentsDone>
+    public partial class InternalRealtimeServerEventResponseFunctionCallArgumentsDone : IJsonModel<InternalRealtimeServerEventResponseFunctionCallArgumentsDone>
     {
         internal InternalRealtimeServerEventResponseFunctionCallArgumentsDone() : this(RealtimeUpdateKind.ItemStreamingFunctionCallArgumentsFinished, null, null, null, null, default, null, null)
         {
@@ -170,3 +170,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeServerEventResponseFunctionCallArgumentsDone>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

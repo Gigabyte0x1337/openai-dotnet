@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComputerActionMove : ComputerCallAction
+    public partial class InternalComputerActionMove : ComputerCallAction
     {
         public InternalComputerActionMove(int x, int y) : base(ComputerCallActionKind.Move)
         {
@@ -26,3 +26,4 @@ namespace OpenAI.Responses
         public int Y { get; set; }
     }
 }
+

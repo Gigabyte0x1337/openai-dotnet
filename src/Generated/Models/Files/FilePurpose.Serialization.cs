@@ -4,7 +4,8 @@
 
 namespace OpenAI.Files
 {
-    internal static partial class FilePurposeExtensions
+    public static partial class FilePurposeExtensions
     {
     }
 }
+

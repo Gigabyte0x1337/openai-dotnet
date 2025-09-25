@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ClientModel;
 using System.Diagnostics;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace OpenAI.Batch;
 
-internal class CreateBatchOperationToken : ContinuationToken
+public class CreateBatchOperationToken : ContinuationToken
 {
     public CreateBatchOperationToken(string batchId)
     {
@@ -87,4 +87,5 @@ internal class CreateBatchOperationToken : ContinuationToken
         return new(batchId);
     }
 }
+
 

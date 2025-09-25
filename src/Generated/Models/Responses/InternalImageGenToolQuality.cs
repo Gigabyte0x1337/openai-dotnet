@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal readonly partial struct InternalImageGenToolQuality : IEquatable<InternalImageGenToolQuality>
+    public readonly partial struct InternalImageGenToolQuality : IEquatable<InternalImageGenToolQuality>
     {
         private readonly string _value;
         private const string LowValue = "low";
@@ -50,3 +50,4 @@ namespace OpenAI.Responses
         public override string ToString() => _value;
     }
 }
+

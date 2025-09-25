@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRequiredFunctionToolCall : IJsonModel<InternalRequiredFunctionToolCall>
+    public partial class InternalRequiredFunctionToolCall : IJsonModel<InternalRequiredFunctionToolCall>
     {
         internal InternalRequiredFunctionToolCall()
         {
@@ -147,3 +147,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalRequiredFunctionToolCall>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

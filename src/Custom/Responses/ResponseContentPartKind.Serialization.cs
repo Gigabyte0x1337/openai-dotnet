@@ -2,7 +2,7 @@ using System;
 
 namespace OpenAI.Responses;
 
-internal static partial class ResponseContentPartKindExtensions
+public static partial class ResponseContentPartKindExtensions
 {
     public static string ToSerialString(this ResponseContentPartKind value) => value switch
     {
@@ -39,3 +39,4 @@ internal static partial class ResponseContentPartKindExtensions
         return ResponseContentPartKind.Unknown;
     }
 }
+

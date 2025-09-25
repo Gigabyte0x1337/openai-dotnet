@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeClientEventResponseCreate : InternalRealtimeClientEvent
+    public partial class InternalRealtimeClientEventResponseCreate : InternalRealtimeClientEvent
     {
         public InternalRealtimeClientEventResponseCreate() : this(InternalRealtimeClientEventType.ResponseCreate, null, null, null)
         {
@@ -21,3 +21,4 @@ namespace OpenAI.Realtime
         public ConversationResponseOptions Response { get; set; }
     }
 }
+

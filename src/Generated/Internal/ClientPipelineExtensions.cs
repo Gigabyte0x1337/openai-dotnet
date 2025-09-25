@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OpenAI
 {
-    internal static partial class ClientPipelineExtensions
+    public static partial class ClientPipelineExtensions
     {
         public static async ValueTask<ClientResult<bool>> ProcessHeadAsBoolMessageAsync(this ClientPipeline pipeline, PipelineMessage message, RequestOptions options)
         {
@@ -39,3 +39,4 @@ namespace OpenAI
         }
     }
 }
+

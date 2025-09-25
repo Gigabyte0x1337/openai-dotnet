@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace OpenAI.Realtime;
 
 [Experimental("OPENAI002")]
-internal static partial class RealtimeContentModalitiesExtensions
+public static partial class RealtimeContentModalitiesExtensions
 {
     internal static IList<InternalRealtimeRequestSessionModality> ToInternalModalities(this RealtimeContentModalities modalities)
     {

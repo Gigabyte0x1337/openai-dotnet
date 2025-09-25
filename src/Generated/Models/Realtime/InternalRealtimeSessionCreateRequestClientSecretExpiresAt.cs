@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeSessionCreateRequestClientSecretExpiresAt
+    public partial class InternalRealtimeSessionCreateRequestClientSecretExpiresAt
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -33,3 +33,4 @@ namespace OpenAI.Realtime
         }
     }
 }
+

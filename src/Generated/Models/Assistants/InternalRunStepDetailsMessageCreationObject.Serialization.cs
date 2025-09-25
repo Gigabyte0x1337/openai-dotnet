@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepDetailsMessageCreationObject : IJsonModel<InternalRunStepDetailsMessageCreationObject>
+    public partial class InternalRunStepDetailsMessageCreationObject : IJsonModel<InternalRunStepDetailsMessageCreationObject>
     {
         internal InternalRunStepDetailsMessageCreationObject() : this(InternalRunStepDetailsType.MessageCreation, null, null)
         {
@@ -112,3 +112,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalRunStepDetailsMessageCreationObject>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

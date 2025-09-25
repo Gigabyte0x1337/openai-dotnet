@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class InternalFineTuningJobsPageToken : IJsonModel<InternalFineTuningJobsPageToken>
+    public partial class InternalFineTuningJobsPageToken : IJsonModel<InternalFineTuningJobsPageToken>
     {
         void IJsonModel<InternalFineTuningJobsPageToken>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -136,3 +136,4 @@ namespace OpenAI.FineTuning
         string IPersistableModel<InternalFineTuningJobsPageToken>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

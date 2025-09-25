@@ -1,4 +1,4 @@
-﻿using System.ClientModel;
+using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -10,7 +10,7 @@ using System.Text.Json;
 namespace OpenAI.FineTuning;
 
 [Experimental("OPENAI001")]
-internal class FineTuningCheckpointCollectionResult : CollectionResult<FineTuningCheckpoint>
+public class FineTuningCheckpointCollectionResult : CollectionResult<FineTuningCheckpoint>
 {
     private readonly FineTuningJob _job;
     private readonly RequestOptions? _options;
@@ -90,3 +90,4 @@ internal class FineTuningCheckpointCollectionResult : CollectionResult<FineTunin
         return points.Data;
     }
 }
+

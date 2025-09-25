@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalItemContentOutputAudio : IJsonModel<InternalItemContentOutputAudio>
+    public partial class InternalItemContentOutputAudio : IJsonModel<InternalItemContentOutputAudio>
     {
         internal InternalItemContentOutputAudio() : this(InternalItemContentType.OutputAudio, null, null, null)
         {
@@ -123,3 +123,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalItemContentOutputAudio>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

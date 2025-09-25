@@ -11,7 +11,7 @@ using OpenAI.Graders;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalEvalGraderTextSimilarityResource : IJsonModel<InternalEvalGraderTextSimilarityResource>
+    public partial class InternalEvalGraderTextSimilarityResource : IJsonModel<InternalEvalGraderTextSimilarityResource>
     {
         internal InternalEvalGraderTextSimilarityResource() : this(GraderType.TextSimilarity, null, null, null, null, default, default)
         {
@@ -164,3 +164,4 @@ namespace OpenAI.Evals
         string IPersistableModel<InternalEvalGraderTextSimilarityResource>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

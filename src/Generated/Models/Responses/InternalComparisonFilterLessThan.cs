@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComparisonFilterLessThan : InternalComparisonFilter
+    public partial class InternalComparisonFilterLessThan : InternalComparisonFilter
     {
         public InternalComparisonFilterLessThan(string key, BinaryData value) : base(InternalComparisonFilterType.Lt, key, value)
         {
@@ -22,3 +22,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

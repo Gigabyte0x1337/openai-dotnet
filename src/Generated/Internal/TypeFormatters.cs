@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace OpenAI
 {
-    internal static partial class TypeFormatters
+    public static partial class TypeFormatters
     {
         private const string RoundtripZFormat = "yyyy-MM-ddTHH:mm:ss.fffffffZ";
         public const string DefaultNumberFormat = "G";
@@ -148,3 +148,4 @@ namespace OpenAI
         };
     }
 }
+

@@ -7,7 +7,7 @@ using System.Text.Json;
 
 namespace OpenAI
 {
-    internal static partial class Optional
+    public static partial class Optional
     {
         public static bool IsCollectionDefined<T>(IEnumerable<T> collection)
         {
@@ -46,3 +46,4 @@ namespace OpenAI
         }
     }
 }
+

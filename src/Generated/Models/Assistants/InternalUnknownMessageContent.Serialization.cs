@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalUnknownMessageContent : IJsonModel<MessageContent>
+    public partial class InternalUnknownMessageContent : IJsonModel<MessageContent>
     {
         internal InternalUnknownMessageContent() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<MessageContent>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

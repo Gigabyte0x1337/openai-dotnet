@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class InternalListPaginatedFineTuningJobsResponse
+    public partial class InternalListPaginatedFineTuningJobsResponse
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -41,3 +41,4 @@ namespace OpenAI.FineTuning
         }
     }
 }
+

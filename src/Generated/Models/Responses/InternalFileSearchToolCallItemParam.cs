@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalFileSearchToolCallItemParam : InternalItemParam
+    public partial class InternalFileSearchToolCallItemParam : InternalItemParam
     {
         public InternalFileSearchToolCallItemParam(IEnumerable<string> queries) : base(InternalItemType.FileSearchCall)
         {
@@ -31,3 +31,4 @@ namespace OpenAI.Responses
         public IList<FileSearchCallResult> Results { get; set; }
     }
 }
+

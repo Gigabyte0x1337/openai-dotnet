@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeToolChoiceFunctionObject : IJsonModel<InternalRealtimeToolChoiceFunctionObject>
+    public partial class InternalRealtimeToolChoiceFunctionObject : IJsonModel<InternalRealtimeToolChoiceFunctionObject>
     {
         internal InternalRealtimeToolChoiceFunctionObject() : this(default, null, null)
         {
@@ -112,3 +112,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeToolChoiceFunctionObject>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

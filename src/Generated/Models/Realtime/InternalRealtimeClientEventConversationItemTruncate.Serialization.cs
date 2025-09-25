@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeClientEventConversationItemTruncate : IJsonModel<InternalRealtimeClientEventConversationItemTruncate>
+    public partial class InternalRealtimeClientEventConversationItemTruncate : IJsonModel<InternalRealtimeClientEventConversationItemTruncate>
     {
         internal InternalRealtimeClientEventConversationItemTruncate() : this(InternalRealtimeClientEventType.ConversationItemTruncate, null, null, null, default, default)
         {
@@ -146,3 +146,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeClientEventConversationItemTruncate>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

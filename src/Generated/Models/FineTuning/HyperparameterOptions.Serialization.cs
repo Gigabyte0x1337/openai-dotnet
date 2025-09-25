@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class HyperparameterOptions : IJsonModel<HyperparameterOptions>
+    public partial class HyperparameterOptions : IJsonModel<HyperparameterOptions>
     {
         void IJsonModel<HyperparameterOptions>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -155,3 +155,4 @@ namespace OpenAI.FineTuning
         string IPersistableModel<HyperparameterOptions>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

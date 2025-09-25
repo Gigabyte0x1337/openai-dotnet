@@ -6,7 +6,7 @@ namespace OpenAI.Files;
 
 [CodeGenType("Uploads")]
 [CodeGenSuppress("InternalUploadsClient", typeof(ClientPipeline), typeof(ApiKeyCredential), typeof(Uri))]
-internal partial class InternalUploadsClient
+public partial class InternalUploadsClient
 {
     // CUSTOM: Added as a convenience.
     /// <summary> Initializes a new instance of <see cref="InternalUploadsClient"/>. </summary>
@@ -76,3 +76,4 @@ internal partial class InternalUploadsClient
         _endpoint = OpenAIClient.GetEndpoint(options);
     }
 }
+

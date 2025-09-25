@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepDeltaStepDetailsToolCallsObject : InternalRunStepDeltaStepDetails
+    public partial class InternalRunStepDeltaStepDetailsToolCallsObject : InternalRunStepDeltaStepDetails
     {
         internal InternalRunStepDeltaStepDetailsToolCallsObject() : this(InternalRunStepDetailsType.ToolCalls, null, null)
         {
@@ -23,3 +23,4 @@ namespace OpenAI.Assistants
         internal IList<InternalRunStepDeltaStepDetailsToolCallsObjectToolCallsObject> ToolCalls { get; }
     }
 }
+

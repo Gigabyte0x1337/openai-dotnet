@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal readonly partial struct InternalCodeInterpreterContainerConfigurationType : IEquatable<InternalCodeInterpreterContainerConfigurationType>
+    public readonly partial struct InternalCodeInterpreterContainerConfigurationType : IEquatable<InternalCodeInterpreterContainerConfigurationType>
     {
         private readonly string _value;
         private const string AutoValue = "auto";
@@ -41,3 +41,4 @@ namespace OpenAI.Responses
         public override string ToString() => _value;
     }
 }
+

@@ -6,7 +6,7 @@ namespace OpenAI.Moderations;
 
 [CodeGenType("CreateModerationRequest")]
 [CodeGenSuppress("ModerationOptions", typeof(BinaryData))]
-internal partial class ModerationOptions
+public partial class ModerationOptions
 {
     // CUSTOM:
     // - Made internal. This value comes from a parameter on the client method.
@@ -26,3 +26,4 @@ internal partial class ModerationOptions
 
     internal BinaryContent ToBinaryContent() => BinaryContent.Create(this, ModelSerializationExtensions.WireOptions);
 }
+

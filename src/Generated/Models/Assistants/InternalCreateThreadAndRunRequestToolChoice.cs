@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal readonly partial struct InternalCreateThreadAndRunRequestToolChoice : IEquatable<InternalCreateThreadAndRunRequestToolChoice>
+    public readonly partial struct InternalCreateThreadAndRunRequestToolChoice : IEquatable<InternalCreateThreadAndRunRequestToolChoice>
     {
         private readonly string _value;
         private const string NoneValue = "none";
@@ -47,3 +47,4 @@ namespace OpenAI.Assistants
         public override string ToString() => _value;
     }
 }
+

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepCodeInterpreterLogOutput : RunStepCodeInterpreterOutput
+    public partial class InternalRunStepCodeInterpreterLogOutput : RunStepCodeInterpreterOutput
     {
         internal InternalRunStepCodeInterpreterLogOutput(string internalLogs) : base(InternalRunStepDetailsCodeInterpreterOutputType.Logs)
         {
@@ -20,3 +20,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.VectorStores
 {
-    internal partial class InternalUpdateVectorStoreFileAttributesRequest : IJsonModel<InternalUpdateVectorStoreFileAttributesRequest>
+    public partial class InternalUpdateVectorStoreFileAttributesRequest : IJsonModel<InternalUpdateVectorStoreFileAttributesRequest>
     {
         internal InternalUpdateVectorStoreFileAttributesRequest() : this(null, null)
         {
@@ -167,3 +167,4 @@ namespace OpenAI.VectorStores
         string IPersistableModel<InternalUpdateVectorStoreFileAttributesRequest>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

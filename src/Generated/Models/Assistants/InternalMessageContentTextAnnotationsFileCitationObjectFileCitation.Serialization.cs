@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalMessageContentTextAnnotationsFileCitationObjectFileCitation : IJsonModel<InternalMessageContentTextAnnotationsFileCitationObjectFileCitation>
+    public partial class InternalMessageContentTextAnnotationsFileCitationObjectFileCitation : IJsonModel<InternalMessageContentTextAnnotationsFileCitationObjectFileCitation>
     {
         internal InternalMessageContentTextAnnotationsFileCitationObjectFileCitation()
         {
@@ -125,3 +125,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalMessageContentTextAnnotationsFileCitationObjectFileCitation>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

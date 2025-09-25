@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalMCPListToolsItemParam : InternalItemParam
+    public partial class InternalMCPListToolsItemParam : InternalItemParam
     {
         public InternalMCPListToolsItemParam(string serverLabel, IEnumerable<McpToolDefinition> tools) : base(InternalItemType.McpListTools)
         {
@@ -35,3 +35,4 @@ namespace OpenAI.Responses
         public string Error { get; set; }
     }
 }
+

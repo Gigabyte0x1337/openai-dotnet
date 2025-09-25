@@ -1,6 +1,6 @@
-﻿namespace OpenAI.Responses;
+namespace OpenAI.Responses;
 
-internal static partial class InternalToolChoiceOptionsExtensions
+public static partial class InternalToolChoiceOptionsExtensions
 {
     internal static ResponseToolChoiceKind ToResponseToolChoiceKind(this InternalToolChoiceOptions options)
     {

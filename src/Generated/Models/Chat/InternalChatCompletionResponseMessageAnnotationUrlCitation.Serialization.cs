@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalChatCompletionResponseMessageAnnotationUrlCitation : IJsonModel<InternalChatCompletionResponseMessageAnnotationUrlCitation>
+    public partial class InternalChatCompletionResponseMessageAnnotationUrlCitation : IJsonModel<InternalChatCompletionResponseMessageAnnotationUrlCitation>
     {
         internal InternalChatCompletionResponseMessageAnnotationUrlCitation()
         {
@@ -158,3 +158,4 @@ namespace OpenAI.Chat
         string IPersistableModel<InternalChatCompletionResponseMessageAnnotationUrlCitation>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

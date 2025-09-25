@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Moderations
 {
-    internal partial class InternalCreateModerationRequestInput3 : IJsonModel<InternalCreateModerationRequestInput3>
+    public partial class InternalCreateModerationRequestInput3 : IJsonModel<InternalCreateModerationRequestInput3>
     {
         internal InternalCreateModerationRequestInput3()
         {
@@ -136,3 +136,4 @@ namespace OpenAI.Moderations
         string IPersistableModel<InternalCreateModerationRequestInput3>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

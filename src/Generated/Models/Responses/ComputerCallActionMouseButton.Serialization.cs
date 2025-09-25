@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Responses
 {
-    internal static partial class ComputerCallActionMouseButtonExtensions
+    public static partial class ComputerCallActionMouseButtonExtensions
     {
         public static string ToSerialString(this ComputerCallActionMouseButton value) => value switch
         {
@@ -44,3 +44,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

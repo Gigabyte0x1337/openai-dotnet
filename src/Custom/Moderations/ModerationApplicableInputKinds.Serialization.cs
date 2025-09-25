@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace OpenAI.Moderations;
 
-internal static partial class ModerationApplicableInputKindsExtensions
+public static partial class ModerationApplicableInputKindsExtensions
 {
     internal static IReadOnlyList<string> ToInternalApplicableInputKinds(this ModerationApplicableInputKinds inputKinds)
     {

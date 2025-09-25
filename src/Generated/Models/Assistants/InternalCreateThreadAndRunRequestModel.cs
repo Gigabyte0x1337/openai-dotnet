@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal readonly partial struct InternalCreateThreadAndRunRequestModel : IEquatable<InternalCreateThreadAndRunRequestModel>
+    public readonly partial struct InternalCreateThreadAndRunRequestModel : IEquatable<InternalCreateThreadAndRunRequestModel>
     {
         private readonly string _value;
         private const string Gpt41Value = "gpt-4.1";
@@ -134,3 +134,4 @@ namespace OpenAI.Assistants
         public override string ToString() => _value;
     }
 }
+

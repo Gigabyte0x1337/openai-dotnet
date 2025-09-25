@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalItemContentInputText : IJsonModel<InternalItemContentInputText>
+    public partial class InternalItemContentInputText : IJsonModel<InternalItemContentInputText>
     {
         internal InternalItemContentInputText() : this(InternalItemContentType.InputText, null, null)
         {
@@ -112,3 +112,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalItemContentInputText>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

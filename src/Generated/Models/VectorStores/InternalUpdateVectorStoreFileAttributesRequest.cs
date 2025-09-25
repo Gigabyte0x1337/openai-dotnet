@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.VectorStores
 {
-    internal partial class InternalUpdateVectorStoreFileAttributesRequest
+    public partial class InternalUpdateVectorStoreFileAttributesRequest
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -34,3 +34,4 @@ namespace OpenAI.VectorStores
         }
     }
 }
+

@@ -5,7 +5,7 @@ using System.Text.Json;
 namespace OpenAI.Realtime;
 
 [CodeGenSerialization(nameof(InputAudioFormat), DeserializationValueHook = nameof(DeserializeInputAudioFormatValue), SerializationValueHook = nameof(SerializeInputAudioFormatValue))]
-internal partial class InternalRealtimeTranscriptionSessionCreateResponse
+public partial class InternalRealtimeTranscriptionSessionCreateResponse
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private void SerializeInputAudioFormatValue(Utf8JsonWriter writer, ModelReaderWriterOptions options)
@@ -17,3 +17,4 @@ internal partial class InternalRealtimeTranscriptionSessionCreateResponse
         inputAudioFormat = new(property.Value.GetString());
     }
 }
+

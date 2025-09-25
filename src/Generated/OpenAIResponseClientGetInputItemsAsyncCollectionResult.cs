@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class OpenAIResponseClientGetInputItemsAsyncCollectionResult : AsyncCollectionResult
+    public partial class OpenAIResponseClientGetInputItemsAsyncCollectionResult : AsyncCollectionResult
     {
         private readonly OpenAIResponseClient _client;
         private readonly string _responseId;
@@ -68,3 +68,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

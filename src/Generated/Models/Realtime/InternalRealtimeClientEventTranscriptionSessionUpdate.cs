@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeClientEventTranscriptionSessionUpdate : InternalRealtimeClientEvent
+    public partial class InternalRealtimeClientEventTranscriptionSessionUpdate : InternalRealtimeClientEvent
     {
         public InternalRealtimeClientEventTranscriptionSessionUpdate(TranscriptionSessionOptions session) : base(InternalRealtimeClientEventType.TranscriptionSessionUpdate)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Realtime
         public TranscriptionSessionOptions Session { get; }
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalFunctionToolCallItemParam : IJsonModel<InternalFunctionToolCallItemParam>
+    public partial class InternalFunctionToolCallItemParam : IJsonModel<InternalFunctionToolCallItemParam>
     {
         internal InternalFunctionToolCallItemParam() : this(InternalItemType.FunctionCall, null, null, null, null)
         {
@@ -134,3 +134,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalFunctionToolCallItemParam>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

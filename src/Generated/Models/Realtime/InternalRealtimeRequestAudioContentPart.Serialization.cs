@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeRequestAudioContentPart : IJsonModel<InternalRealtimeRequestAudioContentPart>
+    public partial class InternalRealtimeRequestAudioContentPart : IJsonModel<InternalRealtimeRequestAudioContentPart>
     {
         void IJsonModel<InternalRealtimeRequestAudioContentPart>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -108,3 +108,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeRequestAudioContentPart>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class UnknownAssistantToolDefinition : IJsonModel<ToolDefinition>
+    public partial class UnknownAssistantToolDefinition : IJsonModel<ToolDefinition>
     {
         internal UnknownAssistantToolDefinition() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<ToolDefinition>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

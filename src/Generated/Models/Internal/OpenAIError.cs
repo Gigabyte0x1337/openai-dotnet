@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Internal
 {
-    internal partial class OpenAIError
+    public partial class OpenAIError
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -43,3 +43,4 @@ namespace OpenAI.Internal
         }
     }
 }
+

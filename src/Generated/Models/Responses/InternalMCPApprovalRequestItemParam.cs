@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalMCPApprovalRequestItemParam : InternalItemParam
+    public partial class InternalMCPApprovalRequestItemParam : InternalItemParam
     {
         public InternalMCPApprovalRequestItemParam(string serverLabel, string name, string arguments) : base(InternalItemType.McpApprovalRequest)
         {
@@ -35,3 +35,4 @@ namespace OpenAI.Responses
         public string Arguments { get; }
     }
 }
+

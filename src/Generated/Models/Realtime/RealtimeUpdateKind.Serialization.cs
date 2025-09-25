@@ -4,7 +4,8 @@
 
 namespace OpenAI.Realtime
 {
-    internal static partial class RealtimeUpdateKindExtensions
+    public static partial class RealtimeUpdateKindExtensions
     {
     }
 }
+

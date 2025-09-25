@@ -7,7 +7,7 @@ using System.ClientModel.Primitives;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalAssistantThreadClient
+    public partial class InternalAssistantThreadClient
     {
         private readonly Uri _endpoint;
 
@@ -24,3 +24,4 @@ namespace OpenAI.Assistants
         public ClientPipeline Pipeline { get; }
     }
 }
+

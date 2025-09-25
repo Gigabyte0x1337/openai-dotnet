@@ -4,7 +4,8 @@
 
 namespace OpenAI.Chat
 {
-    internal static partial class ChatMessageContentPartKindExtensions
+    public static partial class ChatMessageContentPartKindExtensions
     {
     }
 }
+

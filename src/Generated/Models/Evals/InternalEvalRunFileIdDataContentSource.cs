@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalEvalRunFileIdDataContentSource : InternalEvalRunDataContentSource
+    public partial class InternalEvalRunFileIdDataContentSource : InternalEvalRunDataContentSource
     {
         public InternalEvalRunFileIdDataContentSource(string id) : base(InternalEvalRunDataContentSourceType.FileId)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Evals
         public string Id { get; }
     }
 }
+

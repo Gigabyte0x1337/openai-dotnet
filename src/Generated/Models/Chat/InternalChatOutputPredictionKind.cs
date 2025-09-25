@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Chat
 {
-    internal readonly partial struct InternalChatOutputPredictionKind : IEquatable<InternalChatOutputPredictionKind>
+    public readonly partial struct InternalChatOutputPredictionKind : IEquatable<InternalChatOutputPredictionKind>
     {
         private readonly string _value;
         private const string StaticContentValue = "content";
@@ -41,3 +41,4 @@ namespace OpenAI.Chat
         public override string ToString() => _value;
     }
 }
+

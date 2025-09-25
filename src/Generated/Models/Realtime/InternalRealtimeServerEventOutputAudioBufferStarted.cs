@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeServerEventOutputAudioBufferStarted : RealtimeUpdate
+    public partial class InternalRealtimeServerEventOutputAudioBufferStarted : RealtimeUpdate
     {
         internal InternalRealtimeServerEventOutputAudioBufferStarted(string responseId) : base(RealtimeUpdateKind.OutputAudioBufferStarted)
         {
@@ -22,3 +22,4 @@ namespace OpenAI.Realtime
         public string ResponseId { get; }
     }
 }
+

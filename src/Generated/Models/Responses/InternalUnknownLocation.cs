@@ -7,10 +7,11 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalUnknownLocation : WebSearchToolLocation
+    public partial class InternalUnknownLocation : WebSearchToolLocation
     {
         internal InternalUnknownLocation(InternalWebSearchUserLocationKind kind, IDictionary<string, BinaryData> additionalBinaryDataProperties) : base(kind != default ? kind : "unknown", additionalBinaryDataProperties)
         {
         }
     }
 }
+

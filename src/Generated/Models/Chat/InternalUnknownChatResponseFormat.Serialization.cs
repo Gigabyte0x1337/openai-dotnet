@@ -11,7 +11,7 @@ using OpenAI.Internal;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalUnknownChatResponseFormat : IJsonModel<ChatResponseFormat>
+    public partial class InternalUnknownChatResponseFormat : IJsonModel<ChatResponseFormat>
     {
         internal InternalUnknownChatResponseFormat() : this(default, null)
         {
@@ -102,3 +102,4 @@ namespace OpenAI.Chat
         string IPersistableModel<ChatResponseFormat>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

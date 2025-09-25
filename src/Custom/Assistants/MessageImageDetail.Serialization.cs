@@ -2,7 +2,7 @@ using System;
 
 namespace OpenAI.Assistants;
 
-internal static partial class MessageImageDetailExtensions
+public static partial class MessageImageDetailExtensions
 {
     public static string ToSerialString(this MessageImageDetail value) => value switch
     {
@@ -20,3 +20,4 @@ internal static partial class MessageImageDetailExtensions
         throw new ArgumentOutOfRangeException(nameof(value), value, $"Unknown MessageImageDetail value: {value}");
     }
 }
+

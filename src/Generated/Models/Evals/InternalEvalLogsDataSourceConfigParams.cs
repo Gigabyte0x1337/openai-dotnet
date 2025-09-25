@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalEvalLogsDataSourceConfigParams : InternalEvalDataSourceConfigParams
+    public partial class InternalEvalLogsDataSourceConfigParams : InternalEvalDataSourceConfigParams
     {
         public InternalEvalLogsDataSourceConfigParams() : this(InternalEvalDataSourceConfigType.Logs, null, null)
         {
@@ -23,3 +23,4 @@ namespace OpenAI.Evals
         public IDictionary<string, string> Metadata { get; }
     }
 }
+

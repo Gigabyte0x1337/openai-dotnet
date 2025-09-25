@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Internal
 {
-    internal partial class InternalWebSearchLocation
+    public partial class InternalWebSearchLocation
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -39,3 +39,4 @@ namespace OpenAI.Internal
         }
     }
 }
+

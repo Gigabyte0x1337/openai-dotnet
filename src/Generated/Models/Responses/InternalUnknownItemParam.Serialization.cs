@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalUnknownItemParam : IJsonModel<InternalItemParam>
+    public partial class InternalUnknownItemParam : IJsonModel<InternalItemParam>
     {
         internal InternalUnknownItemParam() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalItemParam>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

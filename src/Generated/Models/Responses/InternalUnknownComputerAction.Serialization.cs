@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalUnknownComputerAction : IJsonModel<ComputerCallAction>
+    public partial class InternalUnknownComputerAction : IJsonModel<ComputerCallAction>
     {
         internal InternalUnknownComputerAction() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Responses
         string IPersistableModel<ComputerCallAction>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

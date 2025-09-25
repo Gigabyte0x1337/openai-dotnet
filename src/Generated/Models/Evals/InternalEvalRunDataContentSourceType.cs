@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal readonly partial struct InternalEvalRunDataContentSourceType : IEquatable<InternalEvalRunDataContentSourceType>
+    public readonly partial struct InternalEvalRunDataContentSourceType : IEquatable<InternalEvalRunDataContentSourceType>
     {
         private readonly string _value;
         private const string FileIdValue = "file_id";
@@ -50,3 +50,4 @@ namespace OpenAI.Evals
         public override string ToString() => _value;
     }
 }
+

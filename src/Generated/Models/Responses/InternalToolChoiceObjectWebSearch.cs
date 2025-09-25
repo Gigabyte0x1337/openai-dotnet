@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalToolChoiceObjectWebSearch : InternalToolChoiceObject
+    public partial class InternalToolChoiceObjectWebSearch : InternalToolChoiceObject
     {
         public InternalToolChoiceObjectWebSearch() : this(InternalToolChoiceObjectType.WebSearch, null)
         {
@@ -18,3 +18,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

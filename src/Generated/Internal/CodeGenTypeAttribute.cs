@@ -7,7 +7,7 @@ using System;
 namespace OpenAI
 {
     [AttributeUsage((AttributeTargets.Class | AttributeTargets.Enum | AttributeTargets.Struct))]
-    internal partial class CodeGenTypeAttribute : Attribute
+    public partial class CodeGenTypeAttribute : Attribute
     {
         public CodeGenTypeAttribute(string originalName)
         {
@@ -17,3 +17,4 @@ namespace OpenAI
         public string OriginalName { get; }
     }
 }
+

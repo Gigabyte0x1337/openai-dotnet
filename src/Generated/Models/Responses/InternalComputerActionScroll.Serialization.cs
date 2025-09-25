@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComputerActionScroll : IJsonModel<InternalComputerActionScroll>
+    public partial class InternalComputerActionScroll : IJsonModel<InternalComputerActionScroll>
     {
         internal InternalComputerActionScroll() : this(ComputerCallActionKind.Scroll, null, default, default, default, default)
         {
@@ -151,3 +151,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalComputerActionScroll>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

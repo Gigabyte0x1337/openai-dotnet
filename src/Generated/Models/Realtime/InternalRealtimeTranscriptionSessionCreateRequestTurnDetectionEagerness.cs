@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal readonly partial struct InternalRealtimeTranscriptionSessionCreateRequestTurnDetectionEagerness : IEquatable<InternalRealtimeTranscriptionSessionCreateRequestTurnDetectionEagerness>
+    public readonly partial struct InternalRealtimeTranscriptionSessionCreateRequestTurnDetectionEagerness : IEquatable<InternalRealtimeTranscriptionSessionCreateRequestTurnDetectionEagerness>
     {
         private readonly string _value;
         private const string LowValue = "low";
@@ -50,3 +50,4 @@ namespace OpenAI.Realtime
         public override string ToString() => _value;
     }
 }
+

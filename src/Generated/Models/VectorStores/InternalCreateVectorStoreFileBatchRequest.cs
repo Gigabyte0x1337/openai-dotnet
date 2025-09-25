@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.VectorStores
 {
-    internal partial class InternalCreateVectorStoreFileBatchRequest
+    public partial class InternalCreateVectorStoreFileBatchRequest
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -43,3 +43,4 @@ namespace OpenAI.VectorStores
         }
     }
 }
+

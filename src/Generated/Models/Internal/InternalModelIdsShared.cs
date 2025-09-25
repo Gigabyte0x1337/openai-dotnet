@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Internal
 {
-    internal readonly partial struct InternalModelIdsShared : IEquatable<InternalModelIdsShared>
+    public readonly partial struct InternalModelIdsShared : IEquatable<InternalModelIdsShared>
     {
         private readonly string _value;
         private const string Gpt41Value = "gpt-4.1";
@@ -203,3 +203,4 @@ namespace OpenAI.Internal
         public override string ToString() => _value;
     }
 }
+

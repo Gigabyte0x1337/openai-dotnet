@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeRequestMessageItem : RealtimeItem
+    public partial class InternalRealtimeRequestMessageItem : RealtimeItem
     {
         public InternalRealtimeRequestMessageItem(ConversationMessageRole role) : base(InternalRealtimeItemType.Message)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Realtime
         public ConversationItemStatus? Status { get; set; }
     }
 }
+

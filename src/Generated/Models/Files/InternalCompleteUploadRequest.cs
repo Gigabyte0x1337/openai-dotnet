@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.Files
 {
-    internal partial class InternalCompleteUploadRequest
+    public partial class InternalCompleteUploadRequest
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -39,3 +39,4 @@ namespace OpenAI.Files
         }
     }
 }
+

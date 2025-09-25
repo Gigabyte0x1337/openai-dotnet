@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Chat;
 
-internal static partial class ChatResponseModalitiesExtensions
+public static partial class ChatResponseModalitiesExtensions
 {
     internal static IList<InternalCreateChatCompletionRequestModality> ToInternalModalities(this ChatResponseModalities modalities)
     {

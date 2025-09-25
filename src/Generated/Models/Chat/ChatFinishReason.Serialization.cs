@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Chat
 {
-    internal static partial class ChatFinishReasonExtensions
+    public static partial class ChatFinishReasonExtensions
     {
         public static string ToSerialString(this ChatFinishReason value) => value switch
         {
@@ -44,3 +44,4 @@ namespace OpenAI.Chat
         }
     }
 }
+

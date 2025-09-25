@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Responses
 {
-    internal static partial class FunctionCallOutputStatusExtensions
+    public static partial class FunctionCallOutputStatusExtensions
     {
         public static string ToSerialString(this FunctionCallOutputStatus value) => value switch
         {
@@ -34,3 +34,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

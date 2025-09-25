@@ -11,7 +11,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalAssistantMessageClientGetMessagesAsyncCollectionResultOfT : AsyncCollectionResult<ThreadMessage>
+    public partial class InternalAssistantMessageClientGetMessagesAsyncCollectionResultOfT : AsyncCollectionResult<ThreadMessage>
     {
         private readonly InternalAssistantMessageClient _client;
         private readonly string _threadId;
@@ -78,3 +78,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

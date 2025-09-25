@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Images
 {
-    internal readonly partial struct InternalCreateImageEditRequestBackground : IEquatable<InternalCreateImageEditRequestBackground>
+    public readonly partial struct InternalCreateImageEditRequestBackground : IEquatable<InternalCreateImageEditRequestBackground>
     {
         private readonly string _value;
         private const string TransparentValue = "transparent";
@@ -47,3 +47,4 @@ namespace OpenAI.Images
         public override string ToString() => _value;
     }
 }
+

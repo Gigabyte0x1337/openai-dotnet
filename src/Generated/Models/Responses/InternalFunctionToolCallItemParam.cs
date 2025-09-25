@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalFunctionToolCallItemParam : InternalItemParam
+    public partial class InternalFunctionToolCallItemParam : InternalItemParam
     {
         public InternalFunctionToolCallItemParam(string callId, string name, string arguments) : base(InternalItemType.FunctionCall)
         {
@@ -35,3 +35,4 @@ namespace OpenAI.Responses
         public string Arguments { get; }
     }
 }
+

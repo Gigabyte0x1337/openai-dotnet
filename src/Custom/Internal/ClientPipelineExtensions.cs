@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace OpenAI;
 
-internal static partial class ClientPipelineExtensions
+public static partial class ClientPipelineExtensions
 {
     // CUSTOM:
     // - Supplemented exception body with deserialized OpenAI error details
@@ -68,3 +68,4 @@ internal static partial class ClientPipelineExtensions
     private static string TryCreateErrorMessageFromResponse(PipelineResponse response)
         => Internal.OpenAIError.TryCreateFromResponse(response)?.ToExceptionMessage(response.Status);
 }
+

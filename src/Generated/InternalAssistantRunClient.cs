@@ -12,7 +12,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalAssistantRunClient
+    public partial class InternalAssistantRunClient
     {
         private readonly Uri _endpoint;
 
@@ -229,3 +229,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

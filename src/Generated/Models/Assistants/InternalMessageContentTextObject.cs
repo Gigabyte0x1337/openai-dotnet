@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalMessageContentTextObject : MessageContent
+    public partial class InternalMessageContentTextObject : MessageContent
     {
         public InternalMessageContentTextObject(BinaryData internalText) : base(InternalMessageContentType.Text)
         {
@@ -23,3 +23,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

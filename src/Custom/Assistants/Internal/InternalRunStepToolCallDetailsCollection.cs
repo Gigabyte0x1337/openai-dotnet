@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace OpenAI.Assistants;
 
 [CodeGenType("RunStepDetailsToolCallsObject")]
-internal partial class InternalRunStepDetailsToolCallsObject : IReadOnlyList<RunStepToolCall>
+public partial class InternalRunStepDetailsToolCallsObject : IReadOnlyList<RunStepToolCall>
 {
     [CodeGenMember("ToolCalls")]
     private IReadOnlyList<RunStepToolCall> InternalToolCalls { get; } = [];
@@ -20,3 +20,4 @@ internal partial class InternalRunStepDetailsToolCallsObject : IReadOnlyList<Run
 
     IEnumerator IEnumerable.GetEnumerator() => InternalToolCalls.GetEnumerator();
 }
+

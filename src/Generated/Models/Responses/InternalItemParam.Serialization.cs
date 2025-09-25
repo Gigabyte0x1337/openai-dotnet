@@ -10,7 +10,7 @@ using OpenAI;
 namespace OpenAI.Responses
 {
     [PersistableModelProxy(typeof(InternalUnknownItemParam))]
-    internal abstract partial class InternalItemParam : IJsonModel<InternalItemParam>
+    public abstract partial class InternalItemParam : IJsonModel<InternalItemParam>
     {
         internal InternalItemParam()
         {
@@ -153,3 +153,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalItemParam>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

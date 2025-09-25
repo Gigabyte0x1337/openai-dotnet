@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal readonly partial struct InternalRealtimeResponseModality : IEquatable<InternalRealtimeResponseModality>
+    public readonly partial struct InternalRealtimeResponseModality : IEquatable<InternalRealtimeResponseModality>
     {
         private readonly string _value;
         private const string TextValue = "text";
@@ -44,3 +44,4 @@ namespace OpenAI.Realtime
         public override string ToString() => _value;
     }
 }
+

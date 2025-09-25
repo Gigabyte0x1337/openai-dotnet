@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalItemReferenceItemParam : InternalItemParam
+    public partial class InternalItemReferenceItemParam : InternalItemParam
     {
         public InternalItemReferenceItemParam(string id) : base(InternalItemType.ItemReference)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Responses
         public string Id { get; }
     }
 }
+

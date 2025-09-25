@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalChatCompletionRequestMessageContentPartFileFile
+    public partial class InternalChatCompletionRequestMessageContentPartFileFile
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -34,3 +34,4 @@ namespace OpenAI.Chat
         }
     }
 }
+

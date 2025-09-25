@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepDeltaStepDetailsToolCallsCodeObjectCodeInterpreter : IJsonModel<InternalRunStepDeltaStepDetailsToolCallsCodeObjectCodeInterpreter>
+    public partial class InternalRunStepDeltaStepDetailsToolCallsCodeObjectCodeInterpreter : IJsonModel<InternalRunStepDeltaStepDetailsToolCallsCodeObjectCodeInterpreter>
     {
         void IJsonModel<InternalRunStepDeltaStepDetailsToolCallsCodeObjectCodeInterpreter>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -147,3 +147,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalRunStepDeltaStepDetailsToolCallsCodeObjectCodeInterpreter>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

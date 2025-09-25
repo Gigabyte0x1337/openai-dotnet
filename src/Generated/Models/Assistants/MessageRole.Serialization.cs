@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Assistants
 {
-    internal static partial class MessageRoleExtensions
+    public static partial class MessageRoleExtensions
     {
         public static string ToSerialString(this MessageRole value) => value switch
         {
@@ -29,3 +29,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

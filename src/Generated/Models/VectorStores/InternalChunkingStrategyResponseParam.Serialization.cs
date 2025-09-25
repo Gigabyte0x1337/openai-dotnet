@@ -10,7 +10,7 @@ using OpenAI;
 namespace OpenAI.VectorStores
 {
     [PersistableModelProxy(typeof(InternalUnknownChunkingStrategyResponseParam))]
-    internal abstract partial class InternalChunkingStrategyResponseParam : IJsonModel<InternalChunkingStrategyResponseParam>
+    public abstract partial class InternalChunkingStrategyResponseParam : IJsonModel<InternalChunkingStrategyResponseParam>
     {
         internal InternalChunkingStrategyResponseParam()
         {
@@ -123,3 +123,4 @@ namespace OpenAI.VectorStores
         string IPersistableModel<InternalChunkingStrategyResponseParam>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

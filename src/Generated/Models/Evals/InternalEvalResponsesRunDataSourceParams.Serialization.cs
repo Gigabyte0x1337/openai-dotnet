@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalEvalResponsesRunDataSourceParams : IJsonModel<InternalEvalResponsesRunDataSourceParams>
+    public partial class InternalEvalResponsesRunDataSourceParams : IJsonModel<InternalEvalResponsesRunDataSourceParams>
     {
         internal InternalEvalResponsesRunDataSourceParams() : this(InternalEvalRunDataSourceType.Responses, null, null, null, null, null)
         {
@@ -173,3 +173,4 @@ namespace OpenAI.Evals
         string IPersistableModel<InternalEvalResponsesRunDataSourceParams>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

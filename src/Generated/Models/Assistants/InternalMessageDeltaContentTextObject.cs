@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalMessageDeltaContentTextObject : InternalMessageDeltaContent
+    public partial class InternalMessageDeltaContentTextObject : InternalMessageDeltaContent
     {
         internal InternalMessageDeltaContentTextObject(int index) : base(InternalMessageContentType.Text)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Assistants
         internal InternalMessageDeltaContentTextObjectText Text { get; }
     }
 }
+

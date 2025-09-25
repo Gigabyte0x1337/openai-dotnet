@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeResponseAudioContentPart : IJsonModel<InternalRealtimeResponseAudioContentPart>
+    public partial class InternalRealtimeResponseAudioContentPart : IJsonModel<InternalRealtimeResponseAudioContentPart>
     {
         internal InternalRealtimeResponseAudioContentPart() : this(ConversationContentPartKind.OutputAudio, null, null)
         {
@@ -124,3 +124,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeResponseAudioContentPart>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

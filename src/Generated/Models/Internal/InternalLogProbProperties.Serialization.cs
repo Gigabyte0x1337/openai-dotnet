@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Internal
 {
-    internal partial class InternalLogProbProperties : IJsonModel<InternalLogProbProperties>
+    public partial class InternalLogProbProperties : IJsonModel<InternalLogProbProperties>
     {
         internal InternalLogProbProperties() : this(null, default, null, null)
         {
@@ -157,3 +157,4 @@ namespace OpenAI.Internal
         string IPersistableModel<InternalLogProbProperties>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalMessageContentTextAnnotationsFileCitationObjectFileCitation
+    public partial class InternalMessageContentTextAnnotationsFileCitationObjectFileCitation
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -34,3 +34,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

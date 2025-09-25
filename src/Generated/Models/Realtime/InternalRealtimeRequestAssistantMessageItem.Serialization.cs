@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeRequestAssistantMessageItem : IJsonModel<InternalRealtimeRequestAssistantMessageItem>
+    public partial class InternalRealtimeRequestAssistantMessageItem : IJsonModel<InternalRealtimeRequestAssistantMessageItem>
     {
         internal InternalRealtimeRequestAssistantMessageItem() : this(default, null, null, ConversationMessageRole.Assistant, default, null)
         {
@@ -150,3 +150,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeRequestAssistantMessageItem>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

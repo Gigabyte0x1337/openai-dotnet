@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal readonly partial struct InternalIncludable : IEquatable<InternalIncludable>
+    public readonly partial struct InternalIncludable : IEquatable<InternalIncludable>
     {
         private readonly string _value;
         private const string FileSearchCallResultsValue = "file_search_call.results";
@@ -53,3 +53,4 @@ namespace OpenAI.Responses
         public override string ToString() => _value;
     }
 }
+

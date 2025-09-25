@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalChatCompletionRequestMessageContentPartImageImageUrl : IJsonModel<InternalChatCompletionRequestMessageContentPartImageImageUrl>
+    public partial class InternalChatCompletionRequestMessageContentPartImageImageUrl : IJsonModel<InternalChatCompletionRequestMessageContentPartImageImageUrl>
     {
         internal InternalChatCompletionRequestMessageContentPartImageImageUrl()
         {
@@ -140,3 +140,4 @@ namespace OpenAI.Chat
         string IPersistableModel<InternalChatCompletionRequestMessageContentPartImageImageUrl>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

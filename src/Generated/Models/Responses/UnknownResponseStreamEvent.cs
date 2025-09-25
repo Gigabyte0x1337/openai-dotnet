@@ -7,10 +7,11 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class UnknownResponseStreamEvent : StreamingResponseUpdate
+    public partial class UnknownResponseStreamEvent : StreamingResponseUpdate
     {
         internal UnknownResponseStreamEvent(InternalResponseStreamEventType kind, int sequenceNumber, IDictionary<string, BinaryData> additionalBinaryDataProperties) : base(kind != default ? kind : "unknown", sequenceNumber, additionalBinaryDataProperties)
         {
         }
     }
 }
+

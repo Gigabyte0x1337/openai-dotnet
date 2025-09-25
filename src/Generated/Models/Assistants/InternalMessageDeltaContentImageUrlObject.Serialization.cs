@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalMessageDeltaContentImageUrlObject : IJsonModel<InternalMessageDeltaContentImageUrlObject>
+    public partial class InternalMessageDeltaContentImageUrlObject : IJsonModel<InternalMessageDeltaContentImageUrlObject>
     {
         internal InternalMessageDeltaContentImageUrlObject() : this(InternalMessageContentType.ImageUrl, null, default, null)
         {
@@ -127,3 +127,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalMessageDeltaContentImageUrlObject>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalDotNetChatResponseFormatJsonSchemaJsonSchema : IJsonModel<InternalDotNetChatResponseFormatJsonSchemaJsonSchema>
+    public partial class InternalDotNetChatResponseFormatJsonSchemaJsonSchema : IJsonModel<InternalDotNetChatResponseFormatJsonSchemaJsonSchema>
     {
         internal InternalDotNetChatResponseFormatJsonSchemaJsonSchema()
         {
@@ -174,3 +174,4 @@ namespace OpenAI.Chat
         string IPersistableModel<InternalDotNetChatResponseFormatJsonSchemaJsonSchema>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

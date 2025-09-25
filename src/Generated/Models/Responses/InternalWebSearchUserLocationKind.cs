@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal readonly partial struct InternalWebSearchUserLocationKind : IEquatable<InternalWebSearchUserLocationKind>
+    public readonly partial struct InternalWebSearchUserLocationKind : IEquatable<InternalWebSearchUserLocationKind>
     {
         private readonly string _value;
         private const string ApproximateValue = "approximate";
@@ -41,3 +41,4 @@ namespace OpenAI.Responses
         public override string ToString() => _value;
     }
 }
+

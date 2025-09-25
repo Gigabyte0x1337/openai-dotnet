@@ -1,4 +1,4 @@
-﻿using System.ClientModel.Primitives;
+using System.ClientModel.Primitives;
 using System.Data;
 using System.Text.Json;
 using System;
@@ -6,6 +6,6 @@ using System;
 namespace OpenAI.Chat;
 
 [CodeGenType("DotNetChatResponseFormatJsonSchema")]
-internal partial class InternalDotNetChatResponseFormatJsonSchema
+public partial class InternalDotNetChatResponseFormatJsonSchema
 {
 }

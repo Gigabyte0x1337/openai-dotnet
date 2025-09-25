@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace OpenAI
 {
-    internal static partial class PipelineRequestHeadersExtensions
+    public static partial class PipelineRequestHeadersExtensions
     {
         public static void SetDelimited<T>(this PipelineRequestHeaders headers, string name, IEnumerable<T> value, string delimiter)
         {
@@ -23,3 +23,4 @@ namespace OpenAI
         }
     }
 }
+

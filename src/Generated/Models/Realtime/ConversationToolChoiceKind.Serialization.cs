@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Realtime
 {
-    internal static partial class ConversationToolChoiceKindExtensions
+    public static partial class ConversationToolChoiceKindExtensions
     {
         public static string ToSerialString(this ConversationToolChoiceKind value) => value switch
         {
@@ -34,3 +34,4 @@ namespace OpenAI.Realtime
         }
     }
 }
+

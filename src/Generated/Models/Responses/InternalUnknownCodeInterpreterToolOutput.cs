@@ -7,10 +7,11 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalUnknownCodeInterpreterToolOutput : CodeInterpreterCallOutput
+    public partial class InternalUnknownCodeInterpreterToolOutput : CodeInterpreterCallOutput
     {
         internal InternalUnknownCodeInterpreterToolOutput(InternalCodeInterpreterToolOutputType kind, IDictionary<string, BinaryData> additionalBinaryDataProperties) : base(kind != default ? kind : "unknown", additionalBinaryDataProperties)
         {
         }
     }
 }
+

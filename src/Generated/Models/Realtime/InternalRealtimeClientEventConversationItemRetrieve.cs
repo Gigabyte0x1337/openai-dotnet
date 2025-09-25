@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeClientEventConversationItemRetrieve : InternalRealtimeClientEvent
+    public partial class InternalRealtimeClientEventConversationItemRetrieve : InternalRealtimeClientEvent
     {
         public InternalRealtimeClientEventConversationItemRetrieve(string itemId) : base(InternalRealtimeClientEventType.ConversationItemRetrieve)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Realtime
         public string ItemId { get; }
     }
 }
+

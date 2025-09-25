@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepDetailsToolCallsFileSearchObject : IJsonModel<InternalRunStepDetailsToolCallsFileSearchObject>
+    public partial class InternalRunStepDetailsToolCallsFileSearchObject : IJsonModel<InternalRunStepDetailsToolCallsFileSearchObject>
     {
         internal InternalRunStepDetailsToolCallsFileSearchObject() : this(RunStepToolCallKind.FileSearch, null, null, null)
         {
@@ -118,3 +118,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalRunStepDetailsToolCallsFileSearchObject>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

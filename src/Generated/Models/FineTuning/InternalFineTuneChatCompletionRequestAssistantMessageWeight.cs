@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal readonly partial struct InternalFineTuneChatCompletionRequestAssistantMessageWeight : IEquatable<InternalFineTuneChatCompletionRequestAssistantMessageWeight>
+    public readonly partial struct InternalFineTuneChatCompletionRequestAssistantMessageWeight : IEquatable<InternalFineTuneChatCompletionRequestAssistantMessageWeight>
     {
         private readonly string _value;
         private const string _0Value = "0";
@@ -44,3 +44,4 @@ namespace OpenAI.FineTuning
         public override string ToString() => _value;
     }
 }
+

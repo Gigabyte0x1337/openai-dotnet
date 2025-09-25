@@ -7,10 +7,11 @@ using System.Collections.Generic;
 
 namespace OpenAI.Realtime
 {
-    internal partial class UnknownRealtimeTurnDetection : TurnDetectionOptions
+    public partial class UnknownRealtimeTurnDetection : TurnDetectionOptions
     {
         internal UnknownRealtimeTurnDetection(TurnDetectionKind kind, bool? responseCreationEnabled, bool? responseInterruptionEnabled, IDictionary<string, BinaryData> additionalBinaryDataProperties) : base(kind, responseCreationEnabled, responseInterruptionEnabled, additionalBinaryDataProperties)
         {
         }
     }
 }
+

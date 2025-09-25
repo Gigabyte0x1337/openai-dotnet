@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalUnknownTool : IJsonModel<ResponseTool>
+    public partial class InternalUnknownTool : IJsonModel<ResponseTool>
     {
         internal InternalUnknownTool() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Responses
         string IPersistableModel<ResponseTool>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

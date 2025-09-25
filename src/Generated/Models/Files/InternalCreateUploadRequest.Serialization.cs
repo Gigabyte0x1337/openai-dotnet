@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Files
 {
-    internal partial class InternalCreateUploadRequest : IJsonModel<InternalCreateUploadRequest>
+    public partial class InternalCreateUploadRequest : IJsonModel<InternalCreateUploadRequest>
     {
         internal InternalCreateUploadRequest()
         {
@@ -158,3 +158,4 @@ namespace OpenAI.Files
         string IPersistableModel<InternalCreateUploadRequest>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

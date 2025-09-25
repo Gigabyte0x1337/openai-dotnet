@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalUnknownLocation : IJsonModel<WebSearchToolLocation>
+    public partial class InternalUnknownLocation : IJsonModel<WebSearchToolLocation>
     {
         internal InternalUnknownLocation() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Responses
         string IPersistableModel<WebSearchToolLocation>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

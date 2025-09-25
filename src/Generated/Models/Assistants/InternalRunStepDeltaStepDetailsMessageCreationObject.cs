@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepDeltaStepDetailsMessageCreationObject : InternalRunStepDeltaStepDetails
+    public partial class InternalRunStepDeltaStepDetailsMessageCreationObject : InternalRunStepDeltaStepDetails
     {
         internal InternalRunStepDeltaStepDetailsMessageCreationObject() : this(InternalRunStepDetailsType.MessageCreation, null, null)
         {
@@ -21,3 +21,4 @@ namespace OpenAI.Assistants
         internal InternalRunStepDeltaStepDetailsMessageCreationObjectMessageCreation MessageCreation { get; }
     }
 }
+

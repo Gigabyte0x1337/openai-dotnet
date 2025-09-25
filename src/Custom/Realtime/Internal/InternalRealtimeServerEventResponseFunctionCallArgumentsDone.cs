@@ -14,5 +14,6 @@ namespace OpenAI.Realtime;
 /// associated function definition.
 /// </summary>
 [CodeGenType("RealtimeServerEventResponseFunctionCallArgumentsDone")]
-internal partial class InternalRealtimeServerEventResponseFunctionCallArgumentsDone
+public partial class InternalRealtimeServerEventResponseFunctionCallArgumentsDone
 { }
+

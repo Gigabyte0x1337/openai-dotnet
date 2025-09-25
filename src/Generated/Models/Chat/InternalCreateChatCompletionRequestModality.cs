@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Chat
 {
-    internal readonly partial struct InternalCreateChatCompletionRequestModality : IEquatable<InternalCreateChatCompletionRequestModality>
+    public readonly partial struct InternalCreateChatCompletionRequestModality : IEquatable<InternalCreateChatCompletionRequestModality>
     {
         private readonly string _value;
         private const string TextValue = "text";
@@ -44,3 +44,4 @@ namespace OpenAI.Chat
         public override string ToString() => _value;
     }
 }
+

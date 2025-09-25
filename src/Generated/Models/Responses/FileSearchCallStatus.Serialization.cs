@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Responses
 {
-    internal static partial class FileSearchCallStatusExtensions
+    public static partial class FileSearchCallStatusExtensions
     {
         public static string ToSerialString(this FileSearchCallStatus value) => value switch
         {
@@ -44,3 +44,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

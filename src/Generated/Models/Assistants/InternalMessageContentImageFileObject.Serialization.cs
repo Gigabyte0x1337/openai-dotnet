@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalMessageContentImageFileObject : IJsonModel<InternalMessageContentImageFileObject>
+    public partial class InternalMessageContentImageFileObject : IJsonModel<InternalMessageContentImageFileObject>
     {
         internal InternalMessageContentImageFileObject() : this(InternalMessageContentType.ImageFile, null, null)
         {
@@ -112,3 +112,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalMessageContentImageFileObject>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

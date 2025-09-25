@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal readonly partial struct InternalCreateFineTuningJobRequestIntegrationType : IEquatable<InternalCreateFineTuningJobRequestIntegrationType>
+    public readonly partial struct InternalCreateFineTuningJobRequestIntegrationType : IEquatable<InternalCreateFineTuningJobRequestIntegrationType>
     {
         private readonly string _value;
         private const string WandbValue = "wandb";
@@ -41,3 +41,4 @@ namespace OpenAI.FineTuning
         public override string ToString() => _value;
     }
 }
+

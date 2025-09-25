@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Chat
 {
-    internal static partial class ChatToolCallKindExtensions
+    public static partial class ChatToolCallKindExtensions
     {
         public static string ToSerialString(this ChatToolCallKind value) => value switch
         {
@@ -24,3 +24,4 @@ namespace OpenAI.Chat
         }
     }
 }
+

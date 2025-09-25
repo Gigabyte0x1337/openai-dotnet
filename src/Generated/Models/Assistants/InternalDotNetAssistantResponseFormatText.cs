@@ -8,7 +8,7 @@ using OpenAI.Internal;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalDotNetAssistantResponseFormatText : AssistantResponseFormat
+    public partial class InternalDotNetAssistantResponseFormatText : AssistantResponseFormat
     {
         public InternalDotNetAssistantResponseFormatText() : this(InternalResponseFormatType.Text, null)
         {
@@ -19,3 +19,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

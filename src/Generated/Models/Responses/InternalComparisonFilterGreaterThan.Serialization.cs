@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComparisonFilterGreaterThan : IJsonModel<InternalComparisonFilterGreaterThan>
+    public partial class InternalComparisonFilterGreaterThan : IJsonModel<InternalComparisonFilterGreaterThan>
     {
         internal InternalComparisonFilterGreaterThan() : this(InternalComparisonFilterType.Gt, null, null, null)
         {
@@ -113,3 +113,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalComparisonFilterGreaterThan>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

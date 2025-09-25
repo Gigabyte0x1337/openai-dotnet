@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal partial class InternalEvalItemContentInputText : InternalEvalItemContent
+    public partial class InternalEvalItemContentInputText : InternalEvalItemContent
     {
         public InternalEvalItemContentInputText(string text) : base(InternalEvalItemContentType.InputText)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Evals
         public string Text { get; set; }
     }
 }
+

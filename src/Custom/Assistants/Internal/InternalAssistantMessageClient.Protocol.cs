@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace OpenAI.Assistants;
 
-internal partial class InternalAssistantMessageClient
+public partial class InternalAssistantMessageClient
 {
     /// <summary>
     /// [Protocol Method] Create a message.
@@ -163,3 +163,4 @@ internal partial class InternalAssistantMessageClient
         return ClientResult.FromResponse(Pipeline.ProcessMessage(message, options));
     }
 }
+

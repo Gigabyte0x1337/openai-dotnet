@@ -7,10 +7,11 @@ using System.Collections.Generic;
 
 namespace OpenAI.Realtime
 {
-    internal partial class UnknownRealtimeServerEvent : RealtimeUpdate
+    public partial class UnknownRealtimeServerEvent : RealtimeUpdate
     {
         internal UnknownRealtimeServerEvent(RealtimeUpdateKind kind, string eventId, IDictionary<string, BinaryData> additionalBinaryDataProperties) : base(kind, eventId, additionalBinaryDataProperties)
         {
         }
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class UnknownRealtimeTurnDetection : IJsonModel<TurnDetectionOptions>
+    public partial class UnknownRealtimeTurnDetection : IJsonModel<TurnDetectionOptions>
     {
         internal UnknownRealtimeTurnDetection() : this(default, default, default, null)
         {
@@ -121,3 +121,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<TurnDetectionOptions>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

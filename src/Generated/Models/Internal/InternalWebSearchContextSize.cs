@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Internal
 {
-    internal readonly partial struct InternalWebSearchContextSize : IEquatable<InternalWebSearchContextSize>
+    public readonly partial struct InternalWebSearchContextSize : IEquatable<InternalWebSearchContextSize>
     {
         private readonly string _value;
         private const string LowValue = "low";
@@ -47,3 +47,4 @@ namespace OpenAI.Internal
         public override string ToString() => _value;
     }
 }
+

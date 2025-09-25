@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalAssistantsNamedToolChoiceFunction : IJsonModel<InternalAssistantsNamedToolChoiceFunction>
+    public partial class InternalAssistantsNamedToolChoiceFunction : IJsonModel<InternalAssistantsNamedToolChoiceFunction>
     {
         internal InternalAssistantsNamedToolChoiceFunction()
         {
@@ -125,3 +125,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalAssistantsNamedToolChoiceFunction>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

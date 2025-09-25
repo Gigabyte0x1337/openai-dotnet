@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class UnknownFineTuningIntegration : IJsonModel<InternalFineTuningIntegration>
+    public partial class UnknownFineTuningIntegration : IJsonModel<InternalFineTuningIntegration>
     {
         internal UnknownFineTuningIntegration() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.FineTuning
         string IPersistableModel<InternalFineTuningIntegration>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

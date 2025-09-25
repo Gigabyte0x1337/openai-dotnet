@@ -7,7 +7,7 @@ using System;
 namespace OpenAI
 {
     [AttributeUsage((AttributeTargets.Class | AttributeTargets.Enum | AttributeTargets.Struct), AllowMultiple = true)]
-    internal partial class CodeGenSuppressAttribute : Attribute
+    public partial class CodeGenSuppressAttribute : Attribute
     {
         public CodeGenSuppressAttribute(string member, params Type[] parameters)
         {
@@ -20,3 +20,4 @@ namespace OpenAI
         public Type[] Parameters { get; }
     }
 }
+

@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Assistants
 {
-    internal static partial class RunStepKindExtensions
+    public static partial class RunStepKindExtensions
     {
         public static string ToSerialString(this RunStepKind value) => value switch
         {
@@ -29,3 +29,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

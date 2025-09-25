@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalItemContentRefusal : IJsonModel<InternalItemContentRefusal>
+    public partial class InternalItemContentRefusal : IJsonModel<InternalItemContentRefusal>
     {
         internal InternalItemContentRefusal() : this(InternalItemContentType.Refusal, null, null)
         {
@@ -112,3 +112,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalItemContentRefusal>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

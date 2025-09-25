@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeClientEventConversationItemDelete : IJsonModel<InternalRealtimeClientEventConversationItemDelete>
+    public partial class InternalRealtimeClientEventConversationItemDelete : IJsonModel<InternalRealtimeClientEventConversationItemDelete>
     {
         internal InternalRealtimeClientEventConversationItemDelete() : this(InternalRealtimeClientEventType.ConversationItemDelete, null, null, null)
         {
@@ -118,3 +118,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeClientEventConversationItemDelete>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalCompoundFilterAnd : IJsonModel<InternalCompoundFilterAnd>
+    public partial class InternalCompoundFilterAnd : IJsonModel<InternalCompoundFilterAnd>
     {
         internal InternalCompoundFilterAnd() : this(InternalCompoundFilterType.And, null, null)
         {
@@ -119,3 +119,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalCompoundFilterAnd>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

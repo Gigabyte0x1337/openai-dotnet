@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalChatCompletionRequestMessageContentPartFile : ChatMessageContentPart
+    public partial class InternalChatCompletionRequestMessageContentPartFile : ChatMessageContentPart
     {
         internal InternalChatCompletionRequestMessageContentPartFile(InternalChatCompletionRequestMessageContentPartFileFile @file)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Chat
         internal InternalChatCompletionRequestMessageContentPartFileFile File { get; }
     }
 }
+

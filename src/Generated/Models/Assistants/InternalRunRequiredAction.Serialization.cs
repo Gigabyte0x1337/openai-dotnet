@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunRequiredAction : IJsonModel<InternalRunRequiredAction>
+    public partial class InternalRunRequiredAction : IJsonModel<InternalRunRequiredAction>
     {
         internal InternalRunRequiredAction()
         {
@@ -147,3 +147,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalRunRequiredAction>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

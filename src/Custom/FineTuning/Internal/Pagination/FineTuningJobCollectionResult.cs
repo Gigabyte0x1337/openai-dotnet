@@ -1,4 +1,4 @@
-﻿using System.ClientModel;
+using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -10,7 +10,7 @@ using System.Text.Json;
 namespace OpenAI.FineTuning;
 
 [Experimental("OPENAI001")]
-internal class FineTuningJobCollectionResult : CollectionResult<FineTuningJob>
+public class FineTuningJobCollectionResult : CollectionResult<FineTuningJob>
 {
     private readonly FineTuningClient _fineTuningClient;
     private readonly ClientPipeline _pipeline;
@@ -96,3 +96,4 @@ internal class FineTuningJobCollectionResult : CollectionResult<FineTuningJob>
         return _fineTuningClient.CreateJobsFromPageResponse(response);
     }
 }
+

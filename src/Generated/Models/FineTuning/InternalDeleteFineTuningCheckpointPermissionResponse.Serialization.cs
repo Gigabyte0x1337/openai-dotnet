@@ -11,7 +11,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class InternalDeleteFineTuningCheckpointPermissionResponse : IJsonModel<InternalDeleteFineTuningCheckpointPermissionResponse>
+    public partial class InternalDeleteFineTuningCheckpointPermissionResponse : IJsonModel<InternalDeleteFineTuningCheckpointPermissionResponse>
     {
         internal InternalDeleteFineTuningCheckpointPermissionResponse()
         {
@@ -155,3 +155,4 @@ namespace OpenAI.FineTuning
         }
     }
 }
+

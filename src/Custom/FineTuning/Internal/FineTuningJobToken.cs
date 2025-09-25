@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ClientModel;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
@@ -10,7 +10,7 @@ using System.Text.Json;
 namespace OpenAI.FineTuning;
 
 [Experimental("OPENAI001")]
-internal class FineTuningJobToken : ContinuationToken
+public class FineTuningJobToken : ContinuationToken
 {
     public FineTuningJobToken(string jobId)
     {
@@ -90,4 +90,5 @@ internal class FineTuningJobToken : ContinuationToken
         return new(jobId);
     }
 }
+
 

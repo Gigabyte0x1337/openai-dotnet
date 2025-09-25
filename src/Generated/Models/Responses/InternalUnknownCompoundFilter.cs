@@ -7,10 +7,11 @@ using System.Collections.Generic;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalUnknownCompoundFilter : InternalCompoundFilter
+    public partial class InternalUnknownCompoundFilter : InternalCompoundFilter
     {
         internal InternalUnknownCompoundFilter(InternalCompoundFilterType kind, IList<BinaryData> filters, IDictionary<string, BinaryData> additionalBinaryDataProperties) : base(kind != default ? kind : "unknown", filters, additionalBinaryDataProperties)
         {
         }
     }
 }
+

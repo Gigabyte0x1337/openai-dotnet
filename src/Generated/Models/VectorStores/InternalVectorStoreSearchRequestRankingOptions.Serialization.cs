@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.VectorStores
 {
-    internal partial class InternalVectorStoreSearchRequestRankingOptions : IJsonModel<InternalVectorStoreSearchRequestRankingOptions>
+    public partial class InternalVectorStoreSearchRequestRankingOptions : IJsonModel<InternalVectorStoreSearchRequestRankingOptions>
     {
         void IJsonModel<InternalVectorStoreSearchRequestRankingOptions>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -140,3 +140,4 @@ namespace OpenAI.VectorStores
         string IPersistableModel<InternalVectorStoreSearchRequestRankingOptions>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeServerEventErrorError : IJsonModel<InternalRealtimeServerEventErrorError>
+    public partial class InternalRealtimeServerEventErrorError : IJsonModel<InternalRealtimeServerEventErrorError>
     {
         internal InternalRealtimeServerEventErrorError()
         {
@@ -190,3 +190,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeServerEventErrorError>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

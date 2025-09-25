@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepDeltaStepDetailsToolCallsFileSearchObject : InternalRunStepDeltaStepDetailsToolCallsObjectToolCallsObject
+    public partial class InternalRunStepDeltaStepDetailsToolCallsFileSearchObject : InternalRunStepDeltaStepDetailsToolCallsObjectToolCallsObject
     {
         internal InternalRunStepDeltaStepDetailsToolCallsFileSearchObject(int index, InternalRunStepDetailsToolCallsFileSearchObjectFileSearch fileSearch) : base(RunStepToolCallKind.FileSearch)
         {
@@ -27,3 +27,4 @@ namespace OpenAI.Assistants
         public string Id { get; }
     }
 }
+

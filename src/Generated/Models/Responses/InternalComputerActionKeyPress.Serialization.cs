@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComputerActionKeyPress : IJsonModel<InternalComputerActionKeyPress>
+    public partial class InternalComputerActionKeyPress : IJsonModel<InternalComputerActionKeyPress>
     {
         internal InternalComputerActionKeyPress() : this(ComputerCallActionKind.KeyPress, null, null)
         {
@@ -134,3 +134,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalComputerActionKeyPress>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

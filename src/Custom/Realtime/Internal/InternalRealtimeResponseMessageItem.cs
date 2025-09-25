@@ -5,7 +5,7 @@ namespace OpenAI.Realtime;
 
 [Experimental("OPENAI002")]
 [CodeGenType("RealtimeResponseMessageItem")]
-internal partial class InternalRealtimeResponseMessageItem
+public partial class InternalRealtimeResponseMessageItem
 {
     // CUSTOM: Use the available strong type for roles.
 
@@ -17,3 +17,4 @@ internal partial class InternalRealtimeResponseMessageItem
     [CodeGenMember("Content")]
     public IReadOnlyList<ConversationContentPart> Content { get; }
 }
+

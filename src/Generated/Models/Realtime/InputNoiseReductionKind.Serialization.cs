@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Realtime
 {
-    internal static partial class InputNoiseReductionKindExtensions
+    public static partial class InputNoiseReductionKindExtensions
     {
         public static string ToSerialString(this InputNoiseReductionKind value) => value switch
         {
@@ -29,3 +29,4 @@ namespace OpenAI.Realtime
         }
     }
 }
+

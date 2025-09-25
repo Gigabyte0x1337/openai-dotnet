@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeClientEventConversationItemTruncate : InternalRealtimeClientEvent
+    public partial class InternalRealtimeClientEventConversationItemTruncate : InternalRealtimeClientEvent
     {
         public InternalRealtimeClientEventConversationItemTruncate(string itemId, int contentIndex, int audioEndMs) : base(InternalRealtimeClientEventType.ConversationItemTruncate)
         {
@@ -33,3 +33,4 @@ namespace OpenAI.Realtime
         public int AudioEndMs { get; }
     }
 }
+

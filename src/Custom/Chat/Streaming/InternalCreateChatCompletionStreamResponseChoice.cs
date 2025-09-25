@@ -1,7 +1,7 @@
-﻿namespace OpenAI.Chat;
+namespace OpenAI.Chat;
 
 [CodeGenType("CreateChatCompletionStreamResponseChoice")]
-internal partial class InternalCreateChatCompletionStreamResponseChoice
+public partial class InternalCreateChatCompletionStreamResponseChoice
 {
     // CUSTOM: Changed type from string.
     /// <summary>
@@ -13,3 +13,4 @@ internal partial class InternalCreateChatCompletionStreamResponseChoice
     [CodeGenMember("FinishReason")]
     public ChatFinishReason? FinishReason { get; }
 }
+

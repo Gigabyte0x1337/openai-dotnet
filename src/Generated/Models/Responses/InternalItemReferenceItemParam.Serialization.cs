@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalItemReferenceItemParam : IJsonModel<InternalItemReferenceItemParam>
+    public partial class InternalItemReferenceItemParam : IJsonModel<InternalItemReferenceItemParam>
     {
         internal InternalItemReferenceItemParam() : this(InternalItemType.ItemReference, null, null)
         {
@@ -112,3 +112,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalItemReferenceItemParam>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

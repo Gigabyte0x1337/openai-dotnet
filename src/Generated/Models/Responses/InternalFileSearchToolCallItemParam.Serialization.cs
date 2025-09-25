@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalFileSearchToolCallItemParam : IJsonModel<InternalFileSearchToolCallItemParam>
+    public partial class InternalFileSearchToolCallItemParam : IJsonModel<InternalFileSearchToolCallItemParam>
     {
         internal InternalFileSearchToolCallItemParam() : this(InternalItemType.FileSearchCall, null, null, null)
         {
@@ -159,3 +159,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalFileSearchToolCallItemParam>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

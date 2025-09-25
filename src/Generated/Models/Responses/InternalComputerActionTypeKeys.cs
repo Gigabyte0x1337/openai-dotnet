@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComputerActionTypeKeys : ComputerCallAction
+    public partial class InternalComputerActionTypeKeys : ComputerCallAction
     {
         public InternalComputerActionTypeKeys(string text) : base(ComputerCallActionKind.Type)
         {
@@ -25,3 +25,4 @@ namespace OpenAI.Responses
         public string Text { get; set; }
     }
 }
+

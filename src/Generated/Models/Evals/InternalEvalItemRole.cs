@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal readonly partial struct InternalEvalItemRole : IEquatable<InternalEvalItemRole>
+    public readonly partial struct InternalEvalItemRole : IEquatable<InternalEvalItemRole>
     {
         private readonly string _value;
         private const string UserValue = "user";
@@ -50,3 +50,4 @@ namespace OpenAI.Evals
         public override string ToString() => _value;
     }
 }
+

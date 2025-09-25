@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalThreadObjectToolResources : IJsonModel<InternalThreadObjectToolResources>
+    public partial class InternalThreadObjectToolResources : IJsonModel<InternalThreadObjectToolResources>
     {
         void IJsonModel<InternalThreadObjectToolResources>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -140,3 +140,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalThreadObjectToolResources>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

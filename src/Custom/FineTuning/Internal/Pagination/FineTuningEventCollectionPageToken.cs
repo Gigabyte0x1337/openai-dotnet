@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Diagnostics;
@@ -11,7 +11,7 @@ using System.Text.Json;
 namespace OpenAI.FineTuning;
 
 [Experimental("OPENAI001")]
-internal class FineTuningEventCollectionPageToken : ContinuationToken
+public class FineTuningEventCollectionPageToken : ContinuationToken
 {
     protected FineTuningEventCollectionPageToken(string jobId, int? limit, string? after)
     {
@@ -135,3 +135,4 @@ internal class FineTuningEventCollectionPageToken : ContinuationToken
         return new(jobId, limit, lastId);
     }
 }
+

@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalCodeInterpreterToolCallItemParam : InternalItemParam
+    public partial class InternalCodeInterpreterToolCallItemParam : InternalItemParam
     {
         public InternalCodeInterpreterToolCallItemParam(string code) : base(InternalItemType.CodeInterpreterCall)
         {
@@ -33,3 +33,4 @@ namespace OpenAI.Responses
         public IList<CodeInterpreterCallOutput> Outputs { get; }
     }
 }
+

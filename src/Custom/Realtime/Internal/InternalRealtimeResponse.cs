@@ -6,7 +6,7 @@ namespace OpenAI.Realtime;
 
 [Experimental("OPENAI002")]
 [CodeGenType("RealtimeResponse")]
-internal partial class InternalRealtimeResponse
+public partial class InternalRealtimeResponse
 {
     [CodeGenMember("Output")]
     public IReadOnlyList<RealtimeItem> Output { get; }
@@ -20,3 +20,4 @@ internal partial class InternalRealtimeResponse
     [CodeGenMember("OutputAudioFormat")]
     public RealtimeAudioFormat? OutputAudioFormat { get; }
 }
+

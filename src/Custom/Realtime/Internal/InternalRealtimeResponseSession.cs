@@ -8,7 +8,7 @@ namespace OpenAI.Realtime;
 
 [Experimental("OPENAI002")]
 [CodeGenType("RealtimeResponseSession")]
-internal partial class InternalRealtimeResponseSession
+public partial class InternalRealtimeResponseSession
 {
     // CUSTOM: Use a scenario-specific copy of the voice ID collection.
     [CodeGenMember("Voice")]
@@ -26,3 +26,4 @@ internal partial class InternalRealtimeResponseSession
         }
     }
 }
+

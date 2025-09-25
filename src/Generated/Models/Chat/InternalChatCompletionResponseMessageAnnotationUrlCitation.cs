@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Chat
 {
-    internal partial class InternalChatCompletionResponseMessageAnnotationUrlCitation
+    public partial class InternalChatCompletionResponseMessageAnnotationUrlCitation
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -43,3 +43,4 @@ namespace OpenAI.Chat
         }
     }
 }
+

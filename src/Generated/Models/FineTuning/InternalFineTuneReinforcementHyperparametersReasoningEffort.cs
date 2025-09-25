@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal readonly partial struct InternalFineTuneReinforcementHyperparametersReasoningEffort : IEquatable<InternalFineTuneReinforcementHyperparametersReasoningEffort>
+    public readonly partial struct InternalFineTuneReinforcementHyperparametersReasoningEffort : IEquatable<InternalFineTuneReinforcementHyperparametersReasoningEffort>
     {
         private readonly string _value;
         private const string DefaultValue = "default";
@@ -50,3 +50,4 @@ namespace OpenAI.FineTuning
         public override string ToString() => _value;
     }
 }
+

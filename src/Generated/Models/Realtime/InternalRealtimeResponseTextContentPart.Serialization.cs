@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeResponseTextContentPart : IJsonModel<InternalRealtimeResponseTextContentPart>
+    public partial class InternalRealtimeResponseTextContentPart : IJsonModel<InternalRealtimeResponseTextContentPart>
     {
         internal InternalRealtimeResponseTextContentPart() : this(ConversationContentPartKind.OutputText, null, null)
         {
@@ -112,3 +112,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeResponseTextContentPart>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

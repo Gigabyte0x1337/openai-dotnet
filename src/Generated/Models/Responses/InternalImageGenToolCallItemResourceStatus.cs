@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal readonly partial struct InternalImageGenToolCallItemResourceStatus : IEquatable<InternalImageGenToolCallItemResourceStatus>
+    public readonly partial struct InternalImageGenToolCallItemResourceStatus : IEquatable<InternalImageGenToolCallItemResourceStatus>
     {
         private readonly string _value;
         private const string InProgressValue = "in_progress";
@@ -50,3 +50,4 @@ namespace OpenAI.Responses
         public override string ToString() => _value;
     }
 }
+

@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Text.RegularExpressions;
 
 namespace OpenAI.Chat;
 
 [CodeGenType("ChatCompletionRequestMessageContentPartFileFile")]
-internal partial class InternalChatCompletionRequestMessageContentPartFileFile
+public partial class InternalChatCompletionRequestMessageContentPartFileFile
 {
     private BinaryData _fileBytes;
     private string _fileBytesMediaType;
@@ -41,3 +41,4 @@ internal partial class InternalChatCompletionRequestMessageContentPartFileFile
 
     public string FileBytesMediaType => _fileBytesMediaType;
 }
+

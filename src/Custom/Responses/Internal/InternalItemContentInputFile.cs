@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace OpenAI.Responses;
 
 [CodeGenType("ItemContentInputFile")]
-internal partial class InternalItemContentInputFile
+public partial class InternalItemContentInputFile
 {
     private BinaryData _inputFileBytes;
     private string _inputFileBytesMediaType;

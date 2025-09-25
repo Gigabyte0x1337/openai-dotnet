@@ -1,6 +1,6 @@
 namespace OpenAI.Assistants;
 
-internal static class StreamingUpdateReasonExtensions
+public static class StreamingUpdateReasonExtensions
 {
     internal static string ToSseEventLabel(this StreamingUpdateReason value) => value switch
     {

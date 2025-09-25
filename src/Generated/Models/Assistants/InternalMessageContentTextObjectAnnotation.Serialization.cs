@@ -10,7 +10,7 @@ using OpenAI;
 namespace OpenAI.Assistants
 {
     [PersistableModelProxy(typeof(UnknownMessageContentTextObjectAnnotation))]
-    internal abstract partial class InternalMessageContentTextObjectAnnotation : IJsonModel<InternalMessageContentTextObjectAnnotation>
+    public abstract partial class InternalMessageContentTextObjectAnnotation : IJsonModel<InternalMessageContentTextObjectAnnotation>
     {
         internal InternalMessageContentTextObjectAnnotation()
         {
@@ -123,3 +123,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalMessageContentTextObjectAnnotation>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

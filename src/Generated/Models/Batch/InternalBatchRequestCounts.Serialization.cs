@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Batch
 {
-    internal partial class InternalBatchRequestCounts : IJsonModel<InternalBatchRequestCounts>
+    public partial class InternalBatchRequestCounts : IJsonModel<InternalBatchRequestCounts>
     {
         internal InternalBatchRequestCounts()
         {
@@ -147,3 +147,4 @@ namespace OpenAI.Batch
         string IPersistableModel<InternalBatchRequestCounts>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

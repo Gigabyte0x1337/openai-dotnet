@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal readonly partial struct InternalAssistantToolDefinitionType : IEquatable<InternalAssistantToolDefinitionType>
+    public readonly partial struct InternalAssistantToolDefinitionType : IEquatable<InternalAssistantToolDefinitionType>
     {
         private readonly string _value;
         private const string CodeInterpreterValue = "code_interpreter";
@@ -47,3 +47,4 @@ namespace OpenAI.Assistants
         public override string ToString() => _value;
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Batch
 {
-    internal partial class InternalBatchRequestOutput : IJsonModel<InternalBatchRequestOutput>
+    public partial class InternalBatchRequestOutput : IJsonModel<InternalBatchRequestOutput>
     {
         void IJsonModel<InternalBatchRequestOutput>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -164,3 +164,4 @@ namespace OpenAI.Batch
         string IPersistableModel<InternalBatchRequestOutput>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

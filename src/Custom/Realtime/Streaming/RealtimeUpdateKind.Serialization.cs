@@ -2,7 +2,7 @@ using System;
 
 namespace OpenAI.Realtime;
 
-internal static partial class RealtimeUpdateKindExtensions
+public static partial class RealtimeUpdateKindExtensions
 {
     public static string ToSerialString(this RealtimeUpdateKind value) => value switch
     {
@@ -76,3 +76,4 @@ internal static partial class RealtimeUpdateKindExtensions
         return RealtimeUpdateKind.Unknown;
     }
 }
+

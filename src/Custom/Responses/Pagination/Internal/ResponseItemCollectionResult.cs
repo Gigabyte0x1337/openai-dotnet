@@ -1,4 +1,4 @@
-﻿using System.ClientModel;
+using System.ClientModel;
 using System.ClientModel.Primitives;
 using System.Collections.Generic;
 using System.Text.Json;
@@ -7,7 +7,7 @@ using System.Text.Json;
 
 namespace OpenAI.Responses;
 
-internal class ResponseItemCollectionResult : CollectionResult<ResponseItem>
+public class ResponseItemCollectionResult : CollectionResult<ResponseItem>
 {
     private readonly OpenAIResponseClient _parentClient;
     private readonly RequestOptions? _options;
@@ -95,3 +95,4 @@ internal class ResponseItemCollectionResult : CollectionResult<ResponseItem>
         return ClientResult.FromResponse(_parentClient.Pipeline.ProcessMessage(message, options));
     }
 }
+

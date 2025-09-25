@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.LegacyCompletions
 {
-    internal partial class LegacyCompletionClient
+    public partial class LegacyCompletionClient
     {
         private static PipelineMessageClassifier _pipelineMessageClassifier200;
 
@@ -29,3 +29,4 @@ namespace OpenAI.LegacyCompletions
         }
     }
 }
+

@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal readonly partial struct InternalImageGenToolOutputFormat : IEquatable<InternalImageGenToolOutputFormat>
+    public readonly partial struct InternalImageGenToolOutputFormat : IEquatable<InternalImageGenToolOutputFormat>
     {
         private readonly string _value;
         private const string PngValue = "png";
@@ -47,3 +47,4 @@ namespace OpenAI.Responses
         public override string ToString() => _value;
     }
 }
+

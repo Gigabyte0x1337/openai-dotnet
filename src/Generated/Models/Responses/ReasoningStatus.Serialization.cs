@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Responses
 {
-    internal static partial class ReasoningStatusExtensions
+    public static partial class ReasoningStatusExtensions
     {
         public static string ToSerialString(this ReasoningStatus value) => value switch
         {
@@ -34,3 +34,4 @@ namespace OpenAI.Responses
         }
     }
 }
+

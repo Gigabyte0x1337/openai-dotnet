@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Chat
 {
-    internal static partial class ChatMessageRoleExtensions
+    public static partial class ChatMessageRoleExtensions
     {
         public static string ToSerialString(this ChatMessageRole value) => value switch
         {
@@ -49,3 +49,4 @@ namespace OpenAI.Chat
         }
     }
 }
+

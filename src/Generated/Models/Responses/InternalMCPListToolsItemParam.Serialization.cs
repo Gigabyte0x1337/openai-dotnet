@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalMCPListToolsItemParam : IJsonModel<InternalMCPListToolsItemParam>
+    public partial class InternalMCPListToolsItemParam : IJsonModel<InternalMCPListToolsItemParam>
     {
         internal InternalMCPListToolsItemParam() : this(InternalItemType.McpListTools, null, null, null, null)
         {
@@ -149,3 +149,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalMCPListToolsItemParam>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

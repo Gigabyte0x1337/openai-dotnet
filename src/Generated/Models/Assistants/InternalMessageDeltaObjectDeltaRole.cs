@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal readonly partial struct InternalMessageDeltaObjectDeltaRole : IEquatable<InternalMessageDeltaObjectDeltaRole>
+    public readonly partial struct InternalMessageDeltaObjectDeltaRole : IEquatable<InternalMessageDeltaObjectDeltaRole>
     {
         private readonly string _value;
         private const string UserValue = "user";
@@ -44,3 +44,4 @@ namespace OpenAI.Assistants
         public override string ToString() => _value;
     }
 }
+

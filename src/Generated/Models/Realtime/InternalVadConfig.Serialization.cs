@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalVadConfig : IJsonModel<InternalVadConfig>
+    public partial class InternalVadConfig : IJsonModel<InternalVadConfig>
     {
         void IJsonModel<InternalVadConfig>.Write(Utf8JsonWriter writer, ModelReaderWriterOptions options)
         {
@@ -166,3 +166,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalVadConfig>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

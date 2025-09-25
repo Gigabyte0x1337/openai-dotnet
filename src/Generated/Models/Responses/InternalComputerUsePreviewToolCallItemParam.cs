@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComputerUsePreviewToolCallItemParam : InternalItemParam
+    public partial class InternalComputerUsePreviewToolCallItemParam : InternalItemParam
     {
         public InternalComputerUsePreviewToolCallItemParam(string callId, ComputerCallAction action, IEnumerable<ComputerCallSafetyCheck> pendingSafetyChecks) : base(InternalItemType.ComputerCall)
         {
@@ -37,3 +37,4 @@ namespace OpenAI.Responses
         public IList<ComputerCallSafetyCheck> PendingSafetyChecks { get; }
     }
 }
+

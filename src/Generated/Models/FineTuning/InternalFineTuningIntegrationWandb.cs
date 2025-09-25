@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class InternalFineTuningIntegrationWandb : InternalFineTuningIntegration
+    public partial class InternalFineTuningIntegrationWandb : InternalFineTuningIntegration
     {
         internal InternalFineTuningIntegrationWandb(FineTuningIntegrationWandbWandb wandb) : base(InternalFineTuningIntegrationType.Wandb)
         {
@@ -22,3 +22,4 @@ namespace OpenAI.FineTuning
         internal FineTuningIntegrationWandbWandb Wandb { get; }
     }
 }
+

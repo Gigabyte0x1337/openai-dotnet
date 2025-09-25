@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalCoordinate : IJsonModel<InternalCoordinate>
+    public partial class InternalCoordinate : IJsonModel<InternalCoordinate>
     {
         internal InternalCoordinate()
         {
@@ -136,3 +136,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalCoordinate>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

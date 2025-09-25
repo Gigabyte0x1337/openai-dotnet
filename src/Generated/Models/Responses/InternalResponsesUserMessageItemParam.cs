@@ -9,7 +9,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalResponsesUserMessageItemParam : InternalResponsesMessageItemParam
+    public partial class InternalResponsesUserMessageItemParam : InternalResponsesMessageItemParam
     {
         public InternalResponsesUserMessageItemParam(IEnumerable<ResponseContentPart> content) : base(InternalResponsesMessageRole.User)
         {
@@ -27,3 +27,4 @@ namespace OpenAI.Responses
         public IList<ResponseContentPart> Content { get; }
     }
 }
+

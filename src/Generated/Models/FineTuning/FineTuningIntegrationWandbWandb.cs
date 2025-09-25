@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class FineTuningIntegrationWandbWandb
+    public partial class FineTuningIntegrationWandbWandb
     {
         private protected IDictionary<string, BinaryData> _additionalBinaryDataProperties;
 
@@ -43,3 +43,4 @@ namespace OpenAI.FineTuning
         }
     }
 }
+

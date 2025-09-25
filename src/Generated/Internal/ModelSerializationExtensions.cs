@@ -11,7 +11,7 @@ using System.Text.Json;
 
 namespace OpenAI
 {
-    internal static partial class ModelSerializationExtensions
+    public static partial class ModelSerializationExtensions
     {
         internal static readonly ModelReaderWriterOptions WireOptions = new ModelReaderWriterOptions("W");
         internal static readonly JsonDocumentOptions JsonDocumentOptions = new JsonDocumentOptions
@@ -261,3 +261,4 @@ namespace OpenAI
         }
     }
 }
+

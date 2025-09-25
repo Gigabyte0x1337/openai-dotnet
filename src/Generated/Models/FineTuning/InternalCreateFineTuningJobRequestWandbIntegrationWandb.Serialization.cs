@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.FineTuning
 {
-    internal partial class InternalCreateFineTuningJobRequestWandbIntegrationWandb : IJsonModel<InternalCreateFineTuningJobRequestWandbIntegrationWandb>
+    public partial class InternalCreateFineTuningJobRequestWandbIntegrationWandb : IJsonModel<InternalCreateFineTuningJobRequestWandbIntegrationWandb>
     {
         internal InternalCreateFineTuningJobRequestWandbIntegrationWandb() : this(null, null, null, null, null)
         {
@@ -194,3 +194,4 @@ namespace OpenAI.FineTuning
         string IPersistableModel<InternalCreateFineTuningJobRequestWandbIntegrationWandb>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

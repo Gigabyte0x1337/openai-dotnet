@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeServerEventResponseTextDelta : RealtimeUpdate
+    public partial class InternalRealtimeServerEventResponseTextDelta : RealtimeUpdate
     {
         internal InternalRealtimeServerEventResponseTextDelta(string responseId, string itemId, int outputIndex, int contentIndex, string delta) : base(RealtimeUpdateKind.ItemStreamingPartTextDelta)
         {
@@ -38,3 +38,4 @@ namespace OpenAI.Realtime
         public string Delta { get; }
     }
 }
+

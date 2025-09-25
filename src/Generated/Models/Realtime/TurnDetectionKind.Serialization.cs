@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.Realtime
 {
-    internal static partial class TurnDetectionKindExtensions
+    public static partial class TurnDetectionKindExtensions
     {
         public static string ToSerialString(this TurnDetectionKind value) => value switch
         {
@@ -29,3 +29,4 @@ namespace OpenAI.Realtime
         }
     }
 }
+

@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace OpenAI
 {
-    internal static partial class Argument
+    public static partial class Argument
     {
         public static void AssertNotNull<T>(T value, string name)
         {
@@ -61,3 +61,4 @@ namespace OpenAI
         }
     }
 }
+

@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Evals
 {
-    internal readonly partial struct InternalEvalRunDataSourceType : IEquatable<InternalEvalRunDataSourceType>
+    public readonly partial struct InternalEvalRunDataSourceType : IEquatable<InternalEvalRunDataSourceType>
     {
         private readonly string _value;
         private const string JsonlValue = "jsonl";
@@ -47,3 +47,4 @@ namespace OpenAI.Evals
         public override string ToString() => _value;
     }
 }
+

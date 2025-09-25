@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class UnknownRealtimeTool : IJsonModel<ConversationTool>
+    public partial class UnknownRealtimeTool : IJsonModel<ConversationTool>
     {
         internal UnknownRealtimeTool() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<ConversationTool>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalRealtimeServerEventResponseAudioDelta : IJsonModel<InternalRealtimeServerEventResponseAudioDelta>
+    public partial class InternalRealtimeServerEventResponseAudioDelta : IJsonModel<InternalRealtimeServerEventResponseAudioDelta>
     {
         internal InternalRealtimeServerEventResponseAudioDelta() : this(RealtimeUpdateKind.ItemStreamingPartAudioDelta, null, null, null, null, default, default, null)
         {
@@ -170,3 +170,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InternalRealtimeServerEventResponseAudioDelta>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

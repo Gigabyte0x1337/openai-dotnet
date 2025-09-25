@@ -6,7 +6,7 @@ using System;
 
 namespace OpenAI.VectorStores
 {
-    internal static partial class VectorStoreFileStatusExtensions
+    public static partial class VectorStoreFileStatusExtensions
     {
         public static string ToSerialString(this VectorStoreFileStatus value) => value switch
         {
@@ -39,3 +39,4 @@ namespace OpenAI.VectorStores
         }
     }
 }
+

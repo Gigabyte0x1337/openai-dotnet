@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal partial class InternalUnknownRealtimeAudioNoiseReduction : IJsonModel<InputNoiseReductionOptions>
+    public partial class InternalUnknownRealtimeAudioNoiseReduction : IJsonModel<InputNoiseReductionOptions>
     {
         internal InternalUnknownRealtimeAudioNoiseReduction() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Realtime
         string IPersistableModel<InputNoiseReductionOptions>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

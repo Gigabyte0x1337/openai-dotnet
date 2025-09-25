@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalUnknownReasoningItemSummaryPart : IJsonModel<ReasoningSummaryPart>
+    public partial class InternalUnknownReasoningItemSummaryPart : IJsonModel<ReasoningSummaryPart>
     {
         internal InternalUnknownReasoningItemSummaryPart() : this(default, null)
         {
@@ -101,3 +101,4 @@ namespace OpenAI.Responses
         string IPersistableModel<ReasoningSummaryPart>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalComparisonFilterNotEquals : IJsonModel<InternalComparisonFilterNotEquals>
+    public partial class InternalComparisonFilterNotEquals : IJsonModel<InternalComparisonFilterNotEquals>
     {
         internal InternalComparisonFilterNotEquals() : this(InternalComparisonFilterType.Ne, null, null, null)
         {
@@ -113,3 +113,4 @@ namespace OpenAI.Responses
         string IPersistableModel<InternalComparisonFilterNotEquals>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

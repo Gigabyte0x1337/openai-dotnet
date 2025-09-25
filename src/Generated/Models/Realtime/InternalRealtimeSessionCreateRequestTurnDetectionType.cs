@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Realtime
 {
-    internal readonly partial struct InternalRealtimeSessionCreateRequestTurnDetectionType : IEquatable<InternalRealtimeSessionCreateRequestTurnDetectionType>
+    public readonly partial struct InternalRealtimeSessionCreateRequestTurnDetectionType : IEquatable<InternalRealtimeSessionCreateRequestTurnDetectionType>
     {
         private readonly string _value;
         private const string ServerVadValue = "server_vad";
@@ -44,3 +44,4 @@ namespace OpenAI.Realtime
         public override string ToString() => _value;
     }
 }
+

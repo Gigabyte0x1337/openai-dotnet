@@ -10,7 +10,7 @@ using OpenAI;
 
 namespace OpenAI.Assistants
 {
-    internal partial class InternalRunStepDeltaStepDetailsToolCallsCodeOutputImageObject : IJsonModel<InternalRunStepDeltaStepDetailsToolCallsCodeOutputImageObject>
+    public partial class InternalRunStepDeltaStepDetailsToolCallsCodeOutputImageObject : IJsonModel<InternalRunStepDeltaStepDetailsToolCallsCodeOutputImageObject>
     {
         internal InternalRunStepDeltaStepDetailsToolCallsCodeOutputImageObject() : this(InternalRunStepDetailsCodeInterpreterOutputType.Image, null, default, null)
         {
@@ -127,3 +127,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalRunStepDeltaStepDetailsToolCallsCodeOutputImageObject>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+

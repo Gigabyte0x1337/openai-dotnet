@@ -8,7 +8,7 @@ using OpenAI;
 
 namespace OpenAI.Responses
 {
-    internal partial class InternalLocalShellToolCallItemResource : ResponseItem
+    public partial class InternalLocalShellToolCallItemResource : ResponseItem
     {
         internal InternalLocalShellToolCallItemResource(InternalLocalShellToolCallItemResourceStatus status, string callId, InternalLocalShellExecAction action) : base(InternalItemType.LocalShellCall)
         {
@@ -34,3 +34,4 @@ namespace OpenAI.Responses
         internal InternalLocalShellExecAction Action { get; set; }
     }
 }
+

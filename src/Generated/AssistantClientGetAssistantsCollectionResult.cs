@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace OpenAI.Assistants
 {
-    internal partial class AssistantClientGetAssistantsCollectionResult : CollectionResult
+    public partial class AssistantClientGetAssistantsCollectionResult : CollectionResult
     {
         private readonly AssistantClient _client;
         private readonly int? _limit;
@@ -63,3 +63,4 @@ namespace OpenAI.Assistants
         }
     }
 }
+

@@ -10,7 +10,7 @@ using OpenAI;
 namespace OpenAI.Assistants
 {
     [PersistableModelProxy(typeof(UnknownMessageDeltaContent))]
-    internal abstract partial class InternalMessageDeltaContent : IJsonModel<InternalMessageDeltaContent>
+    public abstract partial class InternalMessageDeltaContent : IJsonModel<InternalMessageDeltaContent>
     {
         internal InternalMessageDeltaContent()
         {
@@ -127,3 +127,4 @@ namespace OpenAI.Assistants
         string IPersistableModel<InternalMessageDeltaContent>.GetFormatFromOptions(ModelReaderWriterOptions options) => "J";
     }
 }
+
